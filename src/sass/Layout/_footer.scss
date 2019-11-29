@@ -1,0 +1,86 @@
+.myFooter{
+    border-bottom: 5px solid $color-red-0;
+    .footer__content{
+        border-top: 1px solid $color-gray-3;
+        border-bottom: 1px solid $color-gray-3;
+        padding: $pd-2 + 15;
+        .footer-link{
+            line-height: 25px;
+            a{
+                text-decoration: none;
+                @include text($color-blue, $fs-1, $fw-normal);
+                &:hover{
+                    @include text($color-black-0, $fs-1, $fw-normal);
+                }
+            }
+        }
+        .link__active{
+            a{
+                @include text($color-blue, $fs-1, $fw-bold-0);
+                &:hover{
+                    @include text($color-black-0, $fs-1, $fw-bold);
+                }
+            }
+        }
+        .languageButton{
+            text-align: right;
+            .myButton{
+                border: 1px solid $color-gray-3;
+                box-shadow: none;
+            }
+        }
+        @include reponsive('medium'){
+            .footer-link{
+                display: none;
+            }
+            .languageButton{
+                text-align: left;
+            }
+        }
+    }
+    .footer__copyright{
+        padding: $pd-2 + 15;
+        .footer__logo{
+            padding: 0 $pd-2;
+            img{
+                width: 100px;
+            }
+        }
+        .footer__text{
+            padding-top: $pd-1 - 3;
+            @include text($color-black-light, $fs-1, $fw-normal);
+        }
+        .footer-link{
+            ul{
+                list-style: none;
+                text-align: right;
+                li{
+                    display: inline;
+                    a{
+                        text-decoration: none;
+                        @include text($color-blue, $fs-1, $fw-normal);
+                        margin-right: $mg-1;
+                        &:hover{
+                            @include text($color-black-0, $fs-1, $fw-normal);
+                        }
+                    }
+                }
+                .link__hidden{
+                    display: none;
+                }
+            }
+        }
+        @include reponsive('medium'){
+            .footer-link{
+                padding-top: 0;
+                text-align: left;
+                ul{
+                    text-align: left;
+                    .link__hidden{
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}

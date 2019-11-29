@@ -1,0 +1,73 @@
+.myAbout{
+    background-color: $color-gray-5;
+    margin-top: $mg-2;
+    h4{
+        @include text($color-black-0, $fs-3, $fw-bold-0);
+        width: 90%;
+        margin: auto;
+        padding: $pd-2 0;
+    }
+    .about__content{
+        width: 90%;
+        margin: auto;
+        .card__content{
+            .card__img{
+                width: 70px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+        }
+        .card__title{
+            h5{
+                @include text($color-black-0, $fs-2, $fw-normal);
+                padding-top: $pd-2;
+                margin-left: $mg-2;
+            }
+        }
+        .card__text{
+            p{
+                @include text($color-black-0, $fs-2 - 2, $fw-normal);
+                padding-top: $pd-2;
+            }
+        }
+    }
+    .about__partner{
+        width: 80%;
+        margin: auto;
+        padding: $pd-2 0;
+        .partner__content{
+            text-align: center;
+            padding-bottom: $pd-2;
+        }
+        .partner__logo{
+            display: flex;
+            justify-content: space-between;
+        }
+        @include reponsive('medium'){
+            .partner__logo{
+                display: block;
+                text-align: center;
+                .logo__item{
+                    margin: $mg-2 0;
+                }
+            }
+        }
+    }
+    .about__learn{
+        width: 80%;
+        margin: auto;
+        padding: $pd-2 0;
+        text-align: center;
+        .learn__content{
+            .learn__left{
+                border-right: 1px solid $color-gray-3;
+            }
+            @include reponsive('medium'){
+                .learn__left{
+                    border-right: none;
+                }
+            }
+        }
+    }
+}

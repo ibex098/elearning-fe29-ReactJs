@@ -1,0 +1,72 @@
+.myCourse{
+    margin-top: $mg-2;
+    .course__content{
+        width: 80%;
+        margin: auto;
+        .intro{
+            background-color: $color-gray-1;
+            .course__intro{
+                padding-top: 8rem;
+                h2{
+                    @include text($color-black-0, $fs-2 - 1, $fw-bold);
+                }
+            }
+        }
+        .course__tab{
+            .nav{
+                justify-content: space-between;
+                border:none;
+                .nav-item{
+                    &:hover{
+                        .nav-link{
+                            border: none;
+                        }
+                    }
+                    .nav-link.active{
+                        border: none;
+                        border-bottom: 5px solid $color-blue;
+                    }
+                    .nav-link{
+                        @include text($color-black-0, $fs-0, $fw-normal);
+                        border: none;
+                    }
+                }
+            }
+            .tab-content{
+                margin-top: $mg-2;
+                position: relative;
+                .card-title{
+                    @include text($color-black-0, $fs-0, $fw-bold);
+                    border: none;
+                }
+                .card-text{
+                    @include text($color-gray-4, $fs-1, $fw-normal);
+                }
+                .course__rating{
+                    display: flex;
+                    .rating__star{
+                        @include text($color-yellow, $fs-1, $fw-normal);
+                        margin-right: $mg-0;
+                    }
+                    span:nth-child(2){
+                        @include text($color-black-0, $fs-1, $fw-bold);
+                        margin-right: $mg-0;
+                    }
+                    span:last-child{
+                        @include text($color-gray-4, $fs-1, $fw-normal);
+                    }
+                }
+                .course__price{
+                    text-align: right;
+                    .oldPprice{
+                        @include text($color-gray-4, $fs-1, $fw-normal);
+                        text-decoration: line-through;
+                    }
+                    .newPrice{
+                        @include text($color-black-0, $fs-0, $fw-bold);
+                    }
+                }
+            }
+        }
+    }
+}

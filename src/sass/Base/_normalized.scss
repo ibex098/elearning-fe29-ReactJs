@@ -1,0 +1,26 @@
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 33%;
+  left: -2.5%;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background-color: $color-white-0 !important;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+    0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  z-index: 3;
+
+  span {
+    @include text($color-blue, $fs-4, $fw-normal);
+    line-height: 0.6;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.owl-next {
+  left: unset;
+  right: -2.5%;
+}
