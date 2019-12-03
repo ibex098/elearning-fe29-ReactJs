@@ -1,0 +1,70 @@
+.btn_green {
+  @include button(
+    $color_white,
+    $color_green,
+    $color_green,
+    $fw_500,
+    $color_green_1,
+    $color_white
+  );
+}
+.btn_white-green {
+  @include button(
+    $color_black,
+    $color_white,
+    $color_white,
+    $fw_500,
+    $color_green,
+    $color_white
+  );
+}
+.btn_blue {
+  @include button(
+    $color_white,
+    $color_blue,
+    $color_blue,
+    $fw_500,
+    $color_blue_1,
+    $color_white
+  );
+}
+.btn_red {
+  @include button(
+    $color_white,
+    $color_red,
+    $color_red,
+    $fw_500,
+    $color_red_1,
+    $color_white
+  );
+}
+.btn_yellow {
+  @include button(
+    $color_white,
+    $color_yellow,
+    $color_yellow,
+    $fw_500,
+    $color_yellow_1,
+    $color_white
+  );
+}
+.btn_outline_white {
+  @include button(
+    $color_white,
+    $noColor,
+    $color_white,
+    $fw_500,
+    $color_white,
+    $color_black
+  );
+}
+.btn_outline_green {
+  @include button(
+    $color_green,
+    $color_white,
+    $color_green,
+    $fw_500,
+    $color_green,
+    $color_white
+  );
+}

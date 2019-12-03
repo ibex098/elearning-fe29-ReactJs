@@ -1,13 +1,14 @@
 import React, { Component } from "react";
+import '../../sass/Layout/_header.scss'
 
 class Header extends Component {
   render() {
     return (
-      <header className="myNavbar">
+      <header className="myNavbar" id="1">
         <nav className="navbar navbar-expand-lg navbar-light container">
           <div className="col-xl-6 col-lg-9 col-md-8 col-sm-6">
             <div className="row">
-              <a className="navbar-brand" href="#">
+              <a className="navbar-brand" href="#1">
                 <img src="./img/logo-coral.svg" alt="logo" />
               </a>
               <div className="categories">
@@ -15,7 +16,7 @@ class Header extends Component {
                 Categories
               </div>
               <div className="input__search">
-                <form action>
+                <form>
                   <div className="input-group">
                     <input
                       type="text"
@@ -44,17 +45,17 @@ class Header extends Component {
             >
               <ul className="navbar-nav">
                 <li className="nav-item bussiness">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#1">
                     Udemy for Business
                   </a>
                 </li>
                 <li className="nav-item instrucstor">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#1">
                     Becom an Instructor
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="#1">
                     <i className="fa fa-shopping-cart" />
                   </a>
                 </li>

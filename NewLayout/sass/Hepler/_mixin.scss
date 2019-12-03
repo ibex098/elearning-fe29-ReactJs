@@ -1,0 +1,54 @@
+@mixin text($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin button(
+  $color,
+  $bg_color,
+  $border_color,
+  $fw,
+  $bg_color_hover,
+  $color_hover
+) {
+  color: $color;
+  background-color: $bg_color;
+  font-weight: $fw;
+  border: 1px solid $border_color;
+  &:hover {
+    background-color: $bg_color_hover;
+    color: $color_hover;
+    border: 1px solid $bg_color_hover;
+  }
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.5s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+@mixin link($color_hover) {
+  &:hover {
+    color: $color_hover;
+  }
+}
+
+@mixin reponsive($screen) {
+  @if map-has-key($map: $breakpoints, $key: $screen) {
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $screen
+    );
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "{$screen} khong ton tai";
+  }
+}

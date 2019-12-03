@@ -1,0 +1,62 @@
+// variable color
+$color_black: #202428; // default
+$color_white: #ffffff; //default
+$noColor: transparent;
+$color_green: #00cb54;
+$color_green_1: #00983f;
+
+$color_red: #fd3635;
+$color_red_1: #fd0403;
+
+$color_blue: #369bfd;
+$color_blue_1: #0482fc;
+
+$color_yellow: #faae2f;
+$color_yellow_1: #f09806;
+
+$color_gray: #8f8f93;
+$color_gray_1: #606065;
+$color_gray_2: rgba(255, 255, 255, 0.6);
+
+$bg_color_gray: #1e2022;
+$bg_color_gray_1: rgba(0, 0, 0, 0.9);
+$bg_color_gray_2:rgba(255, 255, 255, 0.2);
+
+// variable font-size
+$fs_15: 15px; //default
+$fs_13: 13px;
+$fs_20: 20px;
+$fs_24: 24px;
+$fs_70: 70px;
+$fs_40: 40px;
+
+//variable margin
+$mg_2: 2px;
+$mg_10: 10px;
+$mg_25: 25px;
+
+//variable border-radius
+$border_radius: 2px;
+
+//variable padding
+$pd_5: 5px; //default
+$pd_10: 10px;
+$pd_20: 20px;
+
+//variable line-height
+$line_height: 1.43; //default
+
+//variable font-weight
+$fw_normal: normal;
+$fw_400: 400;
+$fw_500: 500;
+$fw_700: 700;
+$fw_bold: bold;
+
+//break points
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px
+);

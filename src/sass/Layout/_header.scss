@@ -1,4 +1,10 @@
-@import "variables.scss";
+@import "../Hepler/variable";
+
+@import "../Base/reset";
+
+@import "../Hepler/mixin";
+@import "../Component/button";
+
 .myNavbar{
     position: fixed;
     width: 100%;
