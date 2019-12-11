@@ -39,6 +39,18 @@
   }
 }
 
+@mixin buttonFocus() {
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin bottomLine() {
+  width: 3rem !important;
+  background-color: #00cb54 !important;
+  height: 0.1875rem;
+}
+
 @mixin reponsive($screen) {
   @if map-has-key($map: $breakpoints, $key: $screen) {
     $value: map-get(

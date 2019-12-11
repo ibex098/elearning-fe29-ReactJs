@@ -38,7 +38,44 @@
 
   <body>
     <!-- Header -->
-    <header class="myHeader"></header>
+    <header class="myHeader">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mx-0">
+          <ul class="list-inline d-none d-lg-block mb-0 header__item">
+            <li class="list-inline-item mr-3">
+              <div class="d-flex align-items-center">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:support@educati.com" class="ml-2"
+                  >support@educati.com</a
+                >
+              </div>
+            </li>
+            <li class="list-inline-item mr-3">
+              <div class="d-flex align-items-center">
+                <i class="fa fa-headphones-alt"></i>
+                <a href="tel:+84924444740" class="ml-2">+84924444740</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-inline mb-0 header__item">
+            <li
+              class="list-inline-item mr-0 p-3 border-right border-left border-white-0_1"
+            >
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-vimeo-v"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <!-- Navbar -->
     <nav class="myNavbar">
@@ -190,6 +227,7 @@
         </form>
       </div>
     </section>
+
     <section>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero
@@ -414,6 +452,52 @@
       </p>
     </section>
 
+    <!-- Capus New -->
+    <section class="campusNew">
+      <div class="container">
+        <h1 class="text-center">Campus News</h1>
+        <div class="bottom_line container mt-3 mb-5"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/1.jpg" class="card-img" alt="..." />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">
+                      June 9, 2018
+                    </p>
+                    <h5 class="card-title">
+                      Kudiyattam: Sanskrit Theater by the Napathya Troupe
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="myBanner">
+      <div class="container">
+        <div class="banner__content row py-5">
+          <div class="col-md-6 mx-auto text-center">
+            <h2 class="text-white mb-4">Become an Instructor</h2>
+            <p>
+              Share your knowledge and reach millions of students across the
+              globe. Join the world's largest online learning marketplace.
+            </p>
+            <button class="btn_white-green">Start Teaching</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- footer -->
     <footer class="myFooter">
       <div class="footer__Top pt-5" style="padding-bottom: 6.25rem;">
@@ -450,7 +534,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mt-5 footer__contact">
               <h4 class="text-white">Contact Us</h4>
-              <div class="buttom_line mt-3"></div>
+              <div class="bottom_line mt-3"></div>
               <ul class="contact__list mt-4" style="list-style: none;">
                 <li class="contact__item footer__text">
                   <i class="fa fa-headphones-alt mr-3"></i>
@@ -476,7 +560,7 @@
             </div>
             <div class="col-lg-2 col-md-6 mt-5 footer__quickLinks">
               <h4 class="text-white">Quick links</h4>
-              <div class="buttom_line mt-3"></div>
+              <div class="bottom_line mt-3"></div>
               <ul class="quickLink__list mt-4" style="list-style: none;">
                 <li class="quickLink__item footer__text">
                   <a href="#" class="myLink footer__text">About Us</a>
@@ -500,7 +584,7 @@
             </div>
             <div class="col-lg-4 col-md-6 mt-5 footer_newLatter">
               <h4 class="text-white">Newslatter</h4>
-              <div class="buttom_line mt-3"></div>
+              <div class="bottom_line mt-3"></div>
               <div class="mt-4">
                 <p class="footer__text">
                   Subscribe to get update and information. Don't worry, we won't
@@ -544,7 +628,7 @@
       integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
       crossorigin="anonymous"
     ></script>
-    <!-- <script
+    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
@@ -553,14 +637,14 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
     <!-- scroll chuột thì thay đổi (roll 500px thì thêm class headerClass, roll lên lại thì remove lại class headerClass) -->
     <script>
       $(window).scroll(function() {
-        if ($(window).scrollTop() > 400) {
-          $(".myNavbar").addClass("headerClass");
+        if ($(window).scrollTop() > 200) {
+          $(".myNavbar").addClass("scrollTop");
         } else {
-          $(".myNavbar").removeClass("headerClass");
+          $(".myNavbar").removeClass("scrollTop");
         }
       });
     </script>
