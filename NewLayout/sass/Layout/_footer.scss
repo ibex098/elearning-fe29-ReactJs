@@ -1,11 +1,11 @@
 .myFooter {
   .backtotop {
     text-align: center;
+    text-decoration: none;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     background-color: #fff;
-    font-size: 1.8rem;
     color: black;
     position: fixed;
     bottom: 3%;
@@ -15,6 +15,9 @@
     transition: all 0.3s;
     font-weight: 400;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   .cd-top--is-visible {
     visibility: visible;
@@ -124,7 +127,7 @@
       a {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.5);
-        &:hover{
+        &:hover {
           color: $color_green;
           transition: all 0.5s;
         }

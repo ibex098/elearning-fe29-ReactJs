@@ -75,3 +75,7 @@
   );
   @include buttonFocus();
 }
+.btn_border {
+  border-radius: 35px;
+  padding: 0.3125rem 0.625rem;
+}

@@ -123,7 +123,8 @@ html body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50%;
-  padding: 13rem 0; }
+  padding: 13rem 0;
+  background-color: rgba(0, 0, 0, 0.5); }
   .myCover .cover__content .cover__text h4 {
     color: #00cb54;
     font-size: 22px;
@@ -158,6 +159,49 @@ html body {
     .myCover .cover__form .cover__button button i {
       font-size: 20px; }
 
+.myCourse {
+  padding: 5rem 0;
+  background-color: #f3f6fb; }
+  .myCourse .course__content .course__button li .active {
+    background: #00cb54 !important;
+    border-color: #00cb54 !important;
+    color: #fff !important; }
+  .myCourse .course__content .course__button li a {
+    text-decoration: none; }
+  .myCourse .course__content .course__tab .course__item .card {
+    border: none; }
+    .myCourse .course__content .course__tab .course__item .card .course__ribbon {
+      position: absolute;
+      background: #fff;
+      width: 200px;
+      text-align: center;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 25px;
+      left: -64px;
+      background-color: #00cb54; }
+    .myCourse .course__content .course__tab .course__item .card .card-body {
+      padding: 1.875rem;
+      position: relative; }
+      .myCourse .course__content .course__tab .course__item .card .card-body .course__user {
+        font-size: 17px; }
+      .myCourse .course__content .course__tab .course__item .card .card-body a {
+        text-decoration: none;
+        color: #202428; }
+        .myCourse .course__content .course__tab .course__item .card .card-body a:hover {
+          color: #00cb54;
+          transition: all 0.3s; }
+      .myCourse .course__content .course__tab .course__item .card .card-body .course__raiting li {
+        display: inline-block; }
+      .myCourse .course__content .course__tab .course__item .card .card-body .course__raiting .active {
+        color: #ffc003; }
+    .myCourse .course__content .course__tab .course__item .card .card-footer {
+      background-color: transparent;
+      padding: 1.875rem; }
+      .myCourse .course__content .course__tab .course__item .card .card-footer ul {
+        font-size: 16px; }
+
 .myBanner {
   background-color: #369bfd; }
   .myBanner .banner__content p {
@@ -166,13 +210,35 @@ html body {
     font-weight: 500;
     line-height: 1.67; }
 
+.categories {
+  padding: 4rem 0; }
+  .categories .item__hover {
+    position: relative;
+    overflow: hidden; }
+    .categories .item__hover img {
+      max-width: 100%;
+      transition: 0.3s; }
+    .categories .item__hover:hover {
+      outline: none;
+      text-decoration: none; }
+      .categories .item__hover:hover img {
+        transform: scale(1.07); }
+  .categories .categories__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); }
+
 .myFooter .backtotop {
   text-align: center;
+  text-decoration: none;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #fff;
-  font-size: 1.8rem;
   color: black;
   position: fixed;
   bottom: 3%;
@@ -181,7 +247,10 @@ html body {
   visibility: hidden;
   transition: all 0.3s;
   font-weight: 400;
-  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
 .myFooter .cd-top--is-visible {
   visibility: visible;
   opacity: 1; }
@@ -309,7 +378,27 @@ html body {
     color: #00cb54; }
 
 .logo {
-  background-color: #f3f6fb; }
+  background-color: #f3f6fb;
+  padding: 5.5rem 0; }
+
+.learning .learning__content .learning__icon {
+  width: 60px;
+  height: 60px;
+  background-color: #00cb54;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+.learning .learning__content .learning__body h4 {
+  line-height: 1.3;
+  color: #202428;
+  letter-spacing: 0;
+  display: block; }
+.learning .learning__content .learning__body p {
+  line-height: 1.76;
+  color: #606065;
+  font-size: 16px;
+  font-weight: 400; }
 
 .btn_green {
   color: #ffffff;
@@ -458,6 +547,10 @@ html body {
   .btn_outline_green:focus {
     outline: none; }
 
+.btn_border {
+  border-radius: 35px;
+  padding: 0.3125rem 0.625rem; }
+
 .bottom_line {
   width: 3rem !important;
   background-color: #00cb54 !important;
@@ -465,5 +558,14 @@ html body {
 
 .myLink:hover {
   color: #00cb54; }
+
+.text_gray {
+  color: #8f8f93; }
+
+.text_green {
+  color: #00cb54; }
+
+.shadow_1 {
+  box-shadow: 0px 5px 5px 0px rgba(176, 177, 193, 0.1); }
 
 /*# sourceMappingURL=index.css.map */

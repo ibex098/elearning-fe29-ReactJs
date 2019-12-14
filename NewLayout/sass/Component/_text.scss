@@ -1,3 +1,9 @@
 .myLink {
   @include link($color_green);
 }
+.text_gray {
+  color: $color_gray;
+}
+.text_green {
+  color: $color_green;
+}

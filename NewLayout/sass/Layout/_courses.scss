@@ -1,0 +1,67 @@
+.myCourse {
+  padding: 5rem 0;
+  background-color: $bg_color;
+  .course__content {
+    .course__button {
+      li {
+        .active {
+          background: #00cb54 !important;
+          border-color: #00cb54 !important;
+          color: #fff !important;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .course__tab {
+      .course__item {
+        .card {
+          border: none;
+          .course__ribbon {
+            position: absolute;
+            background: #fff;
+            width: 200px;
+            text-align: center;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            top: 25px;
+            left: -64px;
+            background-color: $color_green;
+          }
+          .card-body {
+            padding: 1.875rem;
+            position: relative;
+            .course__user {
+              font-size: $fs_15 + 2;
+            }
+            a {
+              text-decoration: none;
+              color: $color_black;
+              &:hover {
+                color: $color_green;
+                transition: all 0.3s;
+              }
+            }
+            .course__raiting {
+              li {
+                display: inline-block;
+              }
+              .active {
+                color: $color_yellow_2;
+              }
+            }
+          }
+          .card-footer {
+            background-color: transparent;
+            padding: 1.875rem;
+            ul {
+              font-size: $fs_15 + 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
