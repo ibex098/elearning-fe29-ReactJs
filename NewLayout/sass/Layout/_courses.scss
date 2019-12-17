@@ -14,54 +14,11 @@
         }
       }
     }
-    .course__tab {
-      .course__item {
-        .card {
-          border: none;
-          .course__ribbon {
-            position: absolute;
-            background: #fff;
-            width: 200px;
-            text-align: center;
-            -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-            top: 25px;
-            left: -64px;
-            background-color: $color_green;
-          }
-          .card-body {
-            padding: 1.875rem;
-            position: relative;
-            .course__user {
-              font-size: $fs_15 + 2;
-            }
-            a {
-              text-decoration: none;
-              color: $color_black;
-              &:hover {
-                color: $color_green;
-                transition: all 0.3s;
-              }
-            }
-            .course__raiting {
-              li {
-                display: inline-block;
-              }
-              .active {
-                color: $color_yellow_2;
-              }
-            }
-          }
-          .card-footer {
-            background-color: transparent;
-            padding: 1.875rem;
-            ul {
-              font-size: $fs_15 + 1;
-            }
-          }
-        }
-      }
+  }
+  //ẩn phần course__info khi repon xuống medium
+  @include reponsive("medium") {
+    .course__info {
+      display: none;
     }
   }
 }

@@ -1,13 +1,20 @@
 .admintrator {
   .admintrator__right {
-      p{
-          @include text($color_gray, $fs_20, $fw_500);
-          line-height: 1.7;
-      }
+    p {
+      @include text($color_gray, $fs_20, $fw_500);
+      line-height: 1.7;
+    }
     h6 {
       font-size: $fs_15 + 3;
       span {
         color: $color_green;
+      }
+    }
+  }
+  @include reponsive("medium") {
+    .admintrator__left {
+      img {
+        width: 75%;
       }
     }
   }

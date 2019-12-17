@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Icons font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <!-- Gooogle font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700&display=swap&subset=latin-ext,vietnamese"
+      rel="stylesheet"
+    />
+
+    <title>Elearning Fe29</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="myHeader">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mx-0">
+          <ul class="list-inline d-none d-lg-block mb-0 header__item">
+            <li class="list-inline-item mr-3">
+              <div class="d-flex align-items-center">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:support@educati.com" class="ml-2"
+                  >support@educati.com</a
+                >
+              </div>
+            </li>
+            <li class="list-inline-item mr-3">
+              <div class="d-flex align-items-center">
+                <i class="fa fa-headphones-alt"></i>
+                <a href="tel:+84924444740" class="ml-2">+84924444740</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-inline mb-0 header__item">
+            <li
+              class="list-inline-item mr-0 p-3 border-right border-left border-white-0_1"
+            >
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-vimeo-v"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="myNavbar">
+      <div class="container">
+        <div class="navbar navbar-expand-lg p-0">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-align-justify"></i>
+          </button>
+          <div class="navbar-brand col-xl-3 col-lg-3 col-md-3 col-sm-2">
+            <a href="./index.html"><img src="./img/logo-black.png" alt=""/></a>
+          </div>
+          <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-toggle="dropdown"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Courses</a
+                  >
+                  <ul class="dropdown-menu" id="navbarDropdown">
+                    <li>
+                      <a href="page-sp-all-courcess.html" class="nav-link__list"
+                        >All Courses</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="page-sp-all-courcess-list.html"
+                        class="nav-link__list"
+                        >Courses List</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="page-sp-all-courcess-with-sidebar.html"
+                        class="nav-link__list"
+                        >Courses Grid</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
+            <div
+              class="collapse navbar-collapse nav__right"
+              id="navbarTogglerDemo03"
+            >
+              <ul class="navbar-nav navbar-expand-lg ml-auto">
+                <li class="nav-item nav__cart mr-3">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-toggle="dropdown"
+                  >
+                    <i class="lnr lnr-cart"></i>
+                    <span class="cart__number">1</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown__cart">
+                    <li class="cart__list">
+                      <a href="#" class="cart__item row py-1">
+                        <div class="cart__img col-3">
+                          <img src="./img/course.jpg" alt="" />
+                        </div>
+                        <div class="cart__info col-9">
+                          <h5 class="cart__item-name m-0">
+                            Management Skills: Team Leadership Skills Master
+                            Class
+                          </h5>
+                          <p class="cart__item-moTa m-0">
+                            Lawrence M. Miller, Best Selling Instructor, Author
+                            & Leadership Coach
+                          </p>
+                          <p class="cart__item-price m-0">
+                            $11.99
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class=" text-center cart__bottom">
+                      <h5 class="cart__total">
+                        ToTal:
+                        <span>$49.16</span>
+                      </h5>
+                      <button class="btn_blue">
+                        Go To Cart
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav__button my-auto">
+                  <button class="btn_green">Login</button>
+                  <button class="btn_red">Sign Up</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cover -->
+    <section
+      class="myCover cover__page cover__bg flex-center"
+      style="background-image: url('./img/30 (5).jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="cover__content col-lg-6 my-2 text-white">
+            <ol class="breadcrumb bg-transparent p-0">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Courses</a></li>
+              <li class="breadcrumb-item">Details</li>
+            </ol>
+            <h2 class="h1">
+              Courses Details
+            </h2>
+          </div>
+          <form class="col-lg-5 my-2 ml-auto cover__form p-0">
+            <div class="p-2 input-group">
+              <input
+                type="text"
+                class="form-control cover__input"
+                placeholder="what do you want to learn?"
+              />
+              <div class="cover__button">
+                <button class="btn_blue">
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- allCourse -->
+    <section class="allCourseButton shadow_1">
+      <div class="container">
+        <form class="row allCourseItem__filter">
+          <div class="col-md-6 my-2">
+            <div class="d-inline-flex justify-md-content-end">
+              <select class="form-control my-2">
+                <option selected="" default="">items page</option>
+                <option>8</option>
+                <option>12</option>
+                <option>16</option>
+                <option>20</option>
+                <option>24</option>
+              </select>
+              <div
+                class="d-flex rounded border ml-3 px-2 my-2 align-items-center"
+              >
+                <a href="page-sp-all-courcess.html" class="active pt-1 ">
+                  <i class="material-icons">apps</i></a
+                >
+                <a href="page-sp-all-courcess-list.html" class="pt-1"
+                  ><i class="material-icons">list</i></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2 text-md-right">
+            <ul class="list-inline">
+              <li class="list-inline-item my-2">
+                <select class="form-control">
+                  <option selected="">Select Category</option>
+                  <option>UI/UX design</option>
+                  <option>Web app</option>
+                  <option>React</option>
+                  <option>Game development</option>
+                </select>
+              </li>
+              <li class="list-inline-item my-2">
+                <select class="form-control">
+                  <option selected="">Filter</option>
+                  <option>Best selling</option>
+                  <option>Newest</option>
+                  <option>Top rated</option>
+                  <option>Low price</option>
+                  <option>High price</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </form>
+        <!-- END row-->
+      </div>
+    </section>
+
+    <section class="allCourseItem gb_gray">
+      <div class="container">
+        <div class="row course__items">
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+          >
+            <div class="card  overflow-hidden shadow_1 h-100 course__card">
+              <span class="course__ribbon text-white">Best selling</span>
+              <img class="card-img-top" src="./img/10.jpg" alt="" />
+              <div class="card-body">
+                <a href="#" class="h5">
+                  Node.js, Express & MongoDB Dev to Deployment
+                </a>
+                <p class="my-3 text_gray course__user">
+                  <span class="lnr lnr-user"></span>
+                  Andrew Mead
+                </p>
+                <ul class="list-unstyled course__raiting">
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="text_gray">
+                    <span>(4.9)</span>
+                    <span>4578</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="card-footer media align-items-center justify-content-between"
+              >
+                <ul class="list-unstyled mb-0 text_gray">
+                  <li class="mb-1">
+                    <i class="fa fa-headphones-alt mr-2"></i>
+                    46 lectures
+                  </li>
+                  <li class="mb-1">
+                    <span class="lnr lnr-clock mr-2"></span>
+                    27.5 hours
+                  </li>
+                </ul>
+                <h4 class="h5">
+                  <span class="text_green">$180</span>
+                </h4>
+              </div>
+            </div>
+            <div class="course__info text-inherit">
+              <div class="info__content p-4">
+                <p>Last updated: 12/2016</p>
+                <h5 class="my-4 course__title">
+                  <a href="#">Node.js, Express & MongoDB Dev to Deployment</a>
+                </h5>
+                <div class="info__view">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fa fa-headphones-alt"></i>
+                      12 Lectures
+                    </li>
+                    <li>
+                      <span class="lnr lnr-clock"></span>
+                      27.5 hours
+                    </li>
+                    <li>
+                      <i class="fa fa-sliders-h"></i>
+                      All Levels
+                    </li>
+                  </ul>
+                </div>
+                <p class="info__des">
+                  Management Skills Certification in Developing People, Leading
+                  Teams & Process Improvement Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Quisquam, numquam. Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <button class="btn_blue w-100">ADD TO CART</button>
+                <div class="info__footer mt-5">
+                  <div class="info__heart">
+                    <span class="lnr lnr-heart"></span>
+                    Add To Wishlist
+                  </div>
+                  <h4 class="h5">
+                    <span class="text_green">$180</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+          >
+            <div class="card  overflow-hidden shadow_1 h-100 course__card">
+              <span class="course__ribbon text-white">Best selling</span>
+              <img class="card-img-top" src="./img/10.jpg" alt="" />
+              <div class="card-body">
+                <a href="#" class="h5">
+                  Node.js, Express & MongoDB Dev to Deployment
+                </a>
+                <p class="my-3 text_gray course__user">
+                  <span class="lnr lnr-user"></span>
+                  Andrew Mead
+                </p>
+                <ul class="list-unstyled course__raiting">
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="text_gray">
+                    <span>(4.9)</span>
+                    <span>4578</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="card-footer media align-items-center justify-content-between"
+              >
+                <ul class="list-unstyled mb-0 text_gray">
+                  <li class="mb-1">
+                    <i class="fa fa-headphones-alt mr-2"></i>
+                    46 lectures
+                  </li>
+                  <li class="mb-1">
+                    <span class="lnr lnr-clock mr-2"></span>
+                    27.5 hours
+                  </li>
+                </ul>
+                <h4 class="h5">
+                  <span class="text_green">$180</span>
+                </h4>
+              </div>
+            </div>
+            <div class="course__info text-inherit">
+              <div class="info__content p-4">
+                <p>Last updated: 12/2016</p>
+                <h5 class="my-4 course__title">
+                  <a href="#">Node.js, Express & MongoDB Dev to Deployment</a>
+                </h5>
+                <div class="info__view">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fa fa-headphones-alt"></i>
+                      12 Lectures
+                    </li>
+                    <li>
+                      <span class="lnr lnr-clock"></span>
+                      27.5 hours
+                    </li>
+                    <li>
+                      <i class="fa fa-sliders-h"></i>
+                      All Levels
+                    </li>
+                  </ul>
+                </div>
+                <p class="info__des">
+                  Management Skills Certification in Developing People, Leading
+                  Teams & Process Improvement Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Quisquam, numquam. Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <button class="btn_blue w-100">ADD TO CART</button>
+                <div class="info__footer mt-5">
+                  <div class="info__heart">
+                    <span class="lnr lnr-heart"></span>
+                    Add To Wishlist
+                  </div>
+                  <h4 class="h5">
+                    <span class="text_green">$180</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+          >
+            <div class="card  overflow-hidden shadow_1 h-100 course__card">
+              <span class="course__ribbon text-white">Best selling</span>
+              <img class="card-img-top" src="./img/10.jpg" alt="" />
+              <div class="card-body">
+                <a href="#" class="h5">
+                  Node.js, Express & MongoDB Dev to Deployment
+                </a>
+                <p class="my-3 text_gray course__user">
+                  <span class="lnr lnr-user"></span>
+                  Andrew Mead
+                </p>
+                <ul class="list-unstyled course__raiting">
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="text_gray">
+                    <span>(4.9)</span>
+                    <span>4578</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="card-footer media align-items-center justify-content-between"
+              >
+                <ul class="list-unstyled mb-0 text_gray">
+                  <li class="mb-1">
+                    <i class="fa fa-headphones-alt mr-2"></i>
+                    46 lectures
+                  </li>
+                  <li class="mb-1">
+                    <span class="lnr lnr-clock mr-2"></span>
+                    27.5 hours
+                  </li>
+                </ul>
+                <h4 class="h5">
+                  <span class="text_green">$180</span>
+                </h4>
+              </div>
+            </div>
+            <div class="course__info text-inherit">
+              <div class="info__content p-4">
+                <p>Last updated: 12/2016</p>
+                <h5 class="my-4 course__title">
+                  <a href="#">Node.js, Express & MongoDB Dev to Deployment</a>
+                </h5>
+                <div class="info__view">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fa fa-headphones-alt"></i>
+                      12 Lectures
+                    </li>
+                    <li>
+                      <span class="lnr lnr-clock"></span>
+                      27.5 hours
+                    </li>
+                    <li>
+                      <i class="fa fa-sliders-h"></i>
+                      All Levels
+                    </li>
+                  </ul>
+                </div>
+                <p class="info__des">
+                  Management Skills Certification in Developing People, Leading
+                  Teams & Process Improvement Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Quisquam, numquam. Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <button class="btn_blue w-100">ADD TO CART</button>
+                <div class="info__footer mt-5">
+                  <div class="info__heart">
+                    <span class="lnr lnr-heart"></span>
+                    Add To Wishlist
+                  </div>
+                  <h4 class="h5">
+                    <span class="text_green">$180</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+          >
+            <div class="card  overflow-hidden shadow_1 h-100 course__card">
+              <span class="course__ribbon text-white">Best selling</span>
+              <img class="card-img-top" src="./img/10.jpg" alt="" />
+              <div class="card-body">
+                <a href="#" class="h5">
+                  Node.js, Express & MongoDB Dev to Deployment
+                </a>
+                <p class="my-3 text_gray course__user">
+                  <span class="lnr lnr-user"></span>
+                  Andrew Mead
+                </p>
+                <ul class="list-unstyled course__raiting">
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="text_gray">
+                    <span>(4.9)</span>
+                    <span>4578</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="card-footer media align-items-center justify-content-between"
+              >
+                <ul class="list-unstyled mb-0 text_gray">
+                  <li class="mb-1">
+                    <i class="fa fa-headphones-alt mr-2"></i>
+                    46 lectures
+                  </li>
+                  <li class="mb-1">
+                    <span class="lnr lnr-clock mr-2"></span>
+                    27.5 hours
+                  </li>
+                </ul>
+                <h4 class="h5">
+                  <span class="text_green">$180</span>
+                </h4>
+              </div>
+            </div>
+            <div class="course__info text-inherit">
+              <div class="info__content p-4">
+                <p>Last updated: 12/2016</p>
+                <h5 class="my-4 course__title">
+                  <a href="#">Node.js, Express & MongoDB Dev to Deployment</a>
+                </h5>
+                <div class="info__view">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fa fa-headphones-alt"></i>
+                      12 Lectures
+                    </li>
+                    <li>
+                      <span class="lnr lnr-clock"></span>
+                      27.5 hours
+                    </li>
+                    <li>
+                      <i class="fa fa-sliders-h"></i>
+                      All Levels
+                    </li>
+                  </ul>
+                </div>
+                <p class="info__des">
+                  Management Skills Certification in Developing People, Leading
+                  Teams & Process Improvement Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Quisquam, numquam. Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <button class="btn_blue w-100">ADD TO CART</button>
+                <div class="info__footer mt-5">
+                  <div class="info__heart">
+                    <span class="lnr lnr-heart"></span>
+                    Add To Wishlist
+                  </div>
+                  <h4 class="h5">
+                    <span class="text_green">$180</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+          >
+            <div class="card  overflow-hidden shadow_1 h-100 course__card">
+              <span class="course__ribbon text-white">Best selling</span>
+              <img class="card-img-top" src="./img/10.jpg" alt="" />
+              <div class="card-body">
+                <a href="#" class="h5">
+                  Node.js, Express & MongoDB Dev to Deployment
+                </a>
+                <p class="my-3 text_gray course__user">
+                  <span class="lnr lnr-user"></span>
+                  Andrew Mead
+                </p>
+                <ul class="list-unstyled course__raiting">
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="text_gray">
+                    <span>(4.9)</span>
+                    <span>4578</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="card-footer media align-items-center justify-content-between"
+              >
+                <ul class="list-unstyled mb-0 text_gray">
+                  <li class="mb-1">
+                    <i class="fa fa-headphones-alt mr-2"></i>
+                    46 lectures
+                  </li>
+                  <li class="mb-1">
+                    <span class="lnr lnr-clock mr-2"></span>
+                    27.5 hours
+                  </li>
+                </ul>
+                <h4 class="h5">
+                  <span class="text_green">$180</span>
+                </h4>
+              </div>
+            </div>
+            <div class="course__info text-inherit">
+              <div class="info__content p-4">
+                <p>Last updated: 12/2016</p>
+                <h5 class="my-4 course__title">
+                  <a href="#">Node.js, Express & MongoDB Dev to Deployment</a>
+                </h5>
+                <div class="info__view">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fa fa-headphones-alt"></i>
+                      12 Lectures
+                    </li>
+                    <li>
+                      <span class="lnr lnr-clock"></span>
+                      27.5 hours
+                    </li>
+                    <li>
+                      <i class="fa fa-sliders-h"></i>
+                      All Levels
+                    </li>
+                  </ul>
+                </div>
+                <p class="info__des">
+                  Management Skills Certification in Developing People, Leading
+                  Teams & Process Improvement Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Quisquam, numquam. Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <button class="btn_blue w-100">ADD TO CART</button>
+                <div class="info__footer mt-5">
+                  <div class="info__heart">
+                    <span class="lnr lnr-heart"></span>
+                    Add To Wishlist
+                  </div>
+                  <h4 class="h5">
+                    <span class="text_green">$180</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+          >
+            <div class="card  overflow-hidden shadow_1 h-100 course__card">
+              <span class="course__ribbon text-white">Best selling</span>
+              <img class="card-img-top" src="./img/10.jpg" alt="" />
+              <div class="card-body">
+                <a href="#" class="h5">
+                  Node.js, Express & MongoDB Dev to Deployment
+                </a>
+                <p class="my-3 text_gray course__user">
+                  <span class="lnr lnr-user"></span>
+                  Andrew Mead
+                </p>
+                <ul class="list-unstyled course__raiting">
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="text_gray">
+                    <span>(4.9)</span>
+                    <span>4578</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="card-footer media align-items-center justify-content-between"
+              >
+                <ul class="list-unstyled mb-0 text_gray">
+                  <li class="mb-1">
+                    <i class="fa fa-headphones-alt mr-2"></i>
+                    46 lectures
+                  </li>
+                  <li class="mb-1">
+                    <span class="lnr lnr-clock mr-2"></span>
+                    27.5 hours
+                  </li>
+                </ul>
+                <h4 class="h5">
+                  <span class="text_green">$180</span>
+                </h4>
+              </div>
+            </div>
+            <div class="course__info text-inherit">
+              <div class="info__content p-4">
+                <p>Last updated: 12/2016</p>
+                <h5 class="my-4 course__title">
+                  <a href="#">Node.js, Express & MongoDB Dev to Deployment</a>
+                </h5>
+                <div class="info__view">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fa fa-headphones-alt"></i>
+                      12 Lectures
+                    </li>
+                    <li>
+                      <span class="lnr lnr-clock"></span>
+                      27.5 hours
+                    </li>
+                    <li>
+                      <i class="fa fa-sliders-h"></i>
+                      All Levels
+                    </li>
+                  </ul>
+                </div>
+                <p class="info__des">
+                  Management Skills Certification in Developing People, Leading
+                  Teams & Process Improvement Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Quisquam, numquam. Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <button class="btn_blue w-100">ADD TO CART</button>
+                <div class="info__footer mt-5">
+                  <div class="info__heart">
+                    <span class="lnr lnr-heart"></span>
+                    Add To Wishlist
+                  </div>
+                  <h4 class="h5">
+                    <span class="text_green">$180</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+          >
+            <div class="card  overflow-hidden shadow_1 h-100 course__card">
+              <span class="course__ribbon text-white">Best selling</span>
+              <img class="card-img-top" src="./img/10.jpg" alt="" />
+              <div class="card-body">
+                <a href="#" class="h5">
+                  Node.js, Express & MongoDB Dev to Deployment
+                </a>
+                <p class="my-3 text_gray course__user">
+                  <span class="lnr lnr-user"></span>
+                  Andrew Mead
+                </p>
+                <ul class="list-unstyled course__raiting">
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="text_gray">
+                    <span>(4.9)</span>
+                    <span>4578</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="card-footer media align-items-center justify-content-between"
+              >
+                <ul class="list-unstyled mb-0 text_gray">
+                  <li class="mb-1">
+                    <i class="fa fa-headphones-alt mr-2"></i>
+                    46 lectures
+                  </li>
+                  <li class="mb-1">
+                    <span class="lnr lnr-clock mr-2"></span>
+                    27.5 hours
+                  </li>
+                </ul>
+                <h4 class="h5">
+                  <span class="text_green">$180</span>
+                </h4>
+              </div>
+            </div>
+            <div class="course__info text-inherit">
+              <div class="info__content p-4">
+                <p>Last updated: 12/2016</p>
+                <h5 class="my-4 course__title">
+                  <a href="#">Node.js, Express & MongoDB Dev to Deployment</a>
+                </h5>
+                <div class="info__view">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fa fa-headphones-alt"></i>
+                      12 Lectures
+                    </li>
+                    <li>
+                      <span class="lnr lnr-clock"></span>
+                      27.5 hours
+                    </li>
+                    <li>
+                      <i class="fa fa-sliders-h"></i>
+                      All Levels
+                    </li>
+                  </ul>
+                </div>
+                <p class="info__des">
+                  Management Skills Certification in Developing People, Leading
+                  Teams & Process Improvement Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Quisquam, numquam. Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <button class="btn_blue w-100">ADD TO CART</button>
+                <div class="info__footer mt-5">
+                  <div class="info__heart">
+                    <span class="lnr lnr-heart"></span>
+                    Add To Wishlist
+                  </div>
+                  <h4 class="h5">
+                    <span class="text_green">$180</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+          >
+            <div class="card  overflow-hidden shadow_1 h-100 course__card">
+              <span class="course__ribbon text-white">Best selling</span>
+              <img class="card-img-top" src="./img/10.jpg" alt="" />
+              <div class="card-body">
+                <a href="#" class="h5">
+                  Node.js, Express & MongoDB Dev to Deployment
+                </a>
+                <p class="my-3 text_gray course__user">
+                  <span class="lnr lnr-user"></span>
+                  Andrew Mead
+                </p>
+                <ul class="list-unstyled course__raiting">
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="active"><i class="fas fa-star"></i></li>
+                  <li class="text_gray">
+                    <span>(4.9)</span>
+                    <span>4578</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="card-footer media align-items-center justify-content-between"
+              >
+                <ul class="list-unstyled mb-0 text_gray">
+                  <li class="mb-1">
+                    <i class="fa fa-headphones-alt mr-2"></i>
+                    46 lectures
+                  </li>
+                  <li class="mb-1">
+                    <span class="lnr lnr-clock mr-2"></span>
+                    27.5 hours
+                  </li>
+                </ul>
+                <h4 class="h5">
+                  <span class="text_green">$180</span>
+                </h4>
+              </div>
+            </div>
+            <div class="course__info text-inherit">
+              <div class="info__content p-4">
+                <p>Last updated: 12/2016</p>
+                <h5 class="my-4 course__title">
+                  <a href="#">Node.js, Express & MongoDB Dev to Deployment</a>
+                </h5>
+                <div class="info__view">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fa fa-headphones-alt"></i>
+                      12 Lectures
+                    </li>
+                    <li>
+                      <span class="lnr lnr-clock"></span>
+                      27.5 hours
+                    </li>
+                    <li>
+                      <i class="fa fa-sliders-h"></i>
+                      All Levels
+                    </li>
+                  </ul>
+                </div>
+                <p class="info__des">
+                  Management Skills Certification in Developing People, Leading
+                  Teams & Process Improvement Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Quisquam, numquam. Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <button class="btn_blue w-100">ADD TO CART</button>
+                <div class="info__footer mt-5">
+                  <div class="info__heart">
+                    <span class="lnr lnr-heart"></span>
+                    Add To Wishlist
+                  </div>
+                  <h4 class="h5">
+                    <span class="text_green">$180</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CourseItem_list -->
+          <div class="course__item-list align-items-center shadow_1">
+            <div class="col-lg-4 px-lg-4 my-4">
+              <img class="w-100" src="./img/11.jpg" alt="" />
+            </div>
+            <div class="col-lg-8 my-4 text_gray">
+              <div class="media justify-content-between">
+                <div class="group">
+                  <a href="#" class="h4">
+                    The Web Developer Bootcamp
+                  </a>
+                  <ul class="list-inline mt-3">
+                    <li class="list-inline-item mr-2">
+                      <span class="lnr lnr-user"></span>
+                      Andrew Mead, John Doe
+                    </li>
+                    <li class="list-inline-item mr-2">
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <i class="fas fa-star text-warning"></i>
+                      <span class="text-dark">5</span>
+                      <span>(4578)</span>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="iconbox courseItem_list-heart">
+                  <span class="lnr lnr-heart"></span>
+                </a>
+              </div>
+              <p>
+                Investig ationes demons travge vunt lectores legee lrus quodk
+                legunt saepius claritas est conctetur adipi sicing elit, sed do
+                eiusmod tempor incididunt labore edolore.
+              </p>
+              <div class="d-md-flex justify-content-between align-items-center">
+                <ul class="list-inline mb-md-0">
+                  <li class="list-inline-item mr-3">
+                    <span class="h4 d-inline text_green">$180</span>
+                    <span class="h5 d-inline"><s>$249</s></span>
+                  </li>
+                  <li class="list-inline-item mr-3">
+                    <i class="fa fa-headphones-alt mr-2"></i>
+                    46 lectures
+                  </li>
+                  <li class="list-inline-item mr-3">
+                    <span class="lnr lnr-clock mr-2"></span>
+                    27.5 hours
+                  </li>
+                </ul>
+                <span class="badge bg_green text-white p-2">Best Selling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Page -->
+          <div class="col-12 mt-5">
+            <ul class="pagination justify-content-center">
+              <li class="page-item mx-1">
+                <a class="page-link iconbox  rounded-0" href="#">
+                  <span class="lnr lnr-chevron-left"></span>
+                </a>
+              </li>
+              <li class="page-item mx-1">
+                <a class="page-link iconbox  rounded-0" href="#">1</a>
+              </li>
+              <li class="page-item active disabled mx-1">
+                <a class="page-link iconbox  rounded-0" href="#">2</a>
+              </li>
+              <li class="page-item mx-1">
+                <a class="page-link iconbox  rounded-0" href="#">3</a>
+              </li>
+              <li class="page-item disabled mx-1">
+                <a class="page-link iconbox  rounded-0" href="#">
+                  <i class="material-icons">more_horiz</i>
+                </a>
+              </li>
+              <li class="page-item mx-1">
+                <a class="page-link iconbox  rounded-0" href="#">16</a>
+              </li>
+              <li class="page-item mx-1">
+                <a class="page-link iconbox  rounded-0" href="#">
+                  <span class="lnr lnr-chevron-right"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="myFooter">
+      <div class="footer__Top pt-5" style="padding-bottom: 6.25rem;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mt-5">
+              <img src="./img/logo-white1.png" alt="Logo" />
+              <div class="footer__text my-4">
+                <p>
+                  Nunc placerat mi id nisi interdm they mtolis. Praesient is
+                  haretra justo ught scel erisque placer.
+                </p>
+              </div>
+              <ul class="footer__social" style="list-style: none;">
+                <li class="social__item">
+                  <a href="#" class="iconbox"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="iconbox"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="iconbox"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="iconbox"
+                    ><i class="fab fa-pinterest-p"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 footer__contact">
+              <h4 class="text-white">Contact Us</h4>
+              <div class="bottom_line mt-3"></div>
+              <ul class="contact__list mt-4" style="list-style: none;">
+                <li class="contact__item footer__text">
+                  <i class="fa fa-headphones-alt mr-3"></i>
+                  <a href="#" class="myLink footer__text">800 567.890.576</a>
+                </li>
+                <li class="contact__item footer__text">
+                  <i class="fa fa-envelope mr-3"></i>
+                  <a href="#" class="myLink footer__text"
+                    >support@educati.com</a
+                  >
+                </li>
+                <li class="contact__item footer__text">
+                  <div class="contact__location">
+                    <i class="fa fa-map-marker-alt pt-1 mr-3"></i>
+                    <div class="location__body">
+                      <span
+                        >184 Main Collins Street Chicago, United States</span
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mt-5 footer__quickLinks">
+              <h4 class="text-white">Quick links</h4>
+              <div class="bottom_line mt-3"></div>
+              <ul class="quickLink__list mt-4" style="list-style: none;">
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">About Us</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Contact Us</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Students</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Admission</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Events</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Latest News</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5 footer_newLatter">
+              <h4 class="text-white">Newslatter</h4>
+              <div class="bottom_line mt-3"></div>
+              <div class="mt-4">
+                <p class="footer__text">
+                  Subscribe to get update and information. Don't worry, we won't
+                  send spam!
+                </p>
+                <form>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      class="form-control py-3 border-white"
+                      required=""
+                    />
+                    <div class="input-group-append">
+                      <button class="btn_green" type="submit">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom py-5 text-center">
+        <div class="container">
+          <p class="mb-0">
+            © 2019 Educati. All rights reserved. Created by
+            <a href="#" class="myLink">Nhan Nguyen</a>
+          </p>
+        </div>
+      </div>
+      <a href="#" class="backtotop cd-top text-replace js-cd-top">
+        <span class="lnr lnr-chevron-up"></span>
+      </a>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- scroll chuột thì thay đổi (roll 500px thì thêm class headerClass, roll lên lại thì remove lại class headerClass) -->
+    <script>
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 200) {
+          $(".myNavbar").addClass("scrollTop");
+        } else {
+          $(".myNavbar").removeClass("scrollTop");
+        }
+      });
+    </script>
+    <!-- Hover vào class course__item thì add class course__info-show vào bên cạnh class course__info và -->
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var course__item = document.querySelector(".course__item");
+        var course__info = document.querySelector(".course__info");
+
+        course__item.addEventListener("mouseenter", function(e) {
+          course__info.classList.add("course__info-show");
+        });
+        course__item.addEventListener("mouseleave", function() {
+          course__info.classList.remove("course__info-show");
+        });
+      });
+    </script> -->
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
+  </body>
+</html>

@@ -151,6 +151,7 @@
                     data-toggle="dropdown"
                   >
                     <i class="lnr lnr-cart"></i>
+                    <span class="cart__number">1</span>
                   </a>
                   <ul class="dropdown-menu dropdown__cart">
                     <li class="cart__list">
@@ -196,9 +197,18 @@
     </nav>
 
     <!-- Cover -->
-    <section class="myCover">
+    <section
+      class="myCover cover__bg flex-center"
+      style="background-image: url(../img/cover_1.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 50% 50%;"
+    >
       <div class="container">
-        <div class="cover__content container">
+        <div class="cover__content">
           <div class="cover__text text-center d-none d-md-block pb-3">
             <h4>LEARN ONLINE COURSES</h4>
             <h1>Advance Your Career.</h1>
@@ -408,17 +418,110 @@
             </ul>
             <div class="tab-content course__tab">
               <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                <div class="row">
+                <div class="row course__items">
                   <div
                     class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
                   >
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
+                    <div
+                      class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                    >
                       <span class="course__ribbon text-white"
                         >Best selling</span
                       >
                       <img class="card-img-top" src="./img/10.jpg" alt="" />
                       <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
+                        <a href="#" class="h5">
+                          Node.js, Express & MongoDB Dev to Deployment
+                        </a>
+                        <p class="my-3 text_gray course__user">
+                          <span class="lnr lnr-user"></span>
+                          Andrew Mead
+                        </p>
+                        <ul class="list-unstyled course__raiting">
+                          <li class="active"><i class="fas fa-star"></i></li>
+                          <li class="active"><i class="fas fa-star"></i></li>
+                          <li class="active"><i class="fas fa-star"></i></li>
+                          <li class="active"><i class="fas fa-star"></i></li>
+                          <li class="active"><i class="fas fa-star"></i></li>
+                          <li class="text_gray">
+                            <span>(4.9)</span>
+                            <span>4578</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="card-footer media align-items-center justify-content-between"
+                      >
+                        <ul class="list-unstyled mb-0 text_gray">
+                          <li class="mb-1">
+                            <i class="fa fa-headphones-alt mr-2"></i>
+                            46 lectures
+                          </li>
+                          <li class="mb-1">
+                            <span class="lnr lnr-clock mr-2"></span>
+                            27.5 hours
+                          </li>
+                        </ul>
+                        <h4 class="h5">
+                          <span class="text_green">$180</span>
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="course__info text-inherit">
+                      <div class="info__content p-4">
+                        <p>Last updated: 12/2016</p>
+                        <h5 class="my-4 course__title">
+                          <a href="#"
+                            >Node.js, Express & MongoDB Dev to Deployment</a
+                          >
+                        </h5>
+                        <div class="info__view">
+                          <ul class="list-unstyled">
+                            <li>
+                              <i class="fa fa-headphones-alt"></i>
+                              12 Lectures
+                            </li>
+                            <li>
+                              <span class="lnr lnr-clock"></span>
+                              27.5 hours
+                            </li>
+                            <li>
+                              <i class="fa fa-sliders-h"></i>
+                              All Levels
+                            </li>
+                          </ul>
+                        </div>
+                        <p class="info__des">
+                          Management Skills Certification in Developing People,
+                          Leading Teams & Process Improvement Lorem ipsum dolor,
+                          sit amet consectetur adipisicing elit. Quisquam,
+                          numquam. Lorem ipsum dolor sit amet.
+                        </p>
+                        <button class="btn_blue w-100">ADD TO CART</button>
+                        <div class="info__footer mt-5">
+                          <div class="info__heart">
+                            <span class="lnr lnr-heart"></span>
+                            Add To Wishlist
+                          </div>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+                  >
+                    <div
+                      class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                    >
+                      <span class="course__ribbon text-white"
+                        >Best selling</span
+                      >
+                      <img class="card-img-top" src="./img/10.jpg" alt="" />
+                      <div class="card-body">
+                        <a href="#" class="h5">
                           The Web Developer Bootcamp In Austin
                         </a>
                         <p class="my-3 text_gray course__user">
@@ -455,17 +558,32 @@
                         </h4>
                       </div>
                     </div>
+                    <div class="course__info">
+                      <div class="info__content p-5">
+                        <div class="info__teacher">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eius nobis sequi nostrum exercitationem
+                            deleniti facilis natus? Vel quasi voluptatum tempore
+                            reprehenderit temporibus tempora beatae doloremque a
+                            ullam, nesciunt similique ducimus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
                   >
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
+                    <div
+                      class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                    >
                       <span class="course__ribbon text-white"
                         >Best selling</span
                       >
                       <img class="card-img-top" src="./img/10.jpg" alt="" />
                       <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
+                        <a href="#" class="h5">
                           The Web Developer Bootcamp In Austin
                         </a>
                         <p class="my-3 text_gray course__user">
@@ -502,17 +620,32 @@
                         </h4>
                       </div>
                     </div>
+                    <div class="course__info">
+                      <div class="info__content p-5">
+                        <div class="info__teacher">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eius nobis sequi nostrum exercitationem
+                            deleniti facilis natus? Vel quasi voluptatum tempore
+                            reprehenderit temporibus tempora beatae doloremque a
+                            ullam, nesciunt similique ducimus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
                   >
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
+                    <div
+                      class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                    >
                       <span class="course__ribbon text-white"
                         >Best selling</span
                       >
                       <img class="card-img-top" src="./img/10.jpg" alt="" />
                       <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
+                        <a href="#" class="h5">
                           The Web Developer Bootcamp In Austin
                         </a>
                         <p class="my-3 text_gray course__user">
@@ -549,17 +682,32 @@
                         </h4>
                       </div>
                     </div>
+                    <div class="course__info">
+                      <div class="info__content p-5">
+                        <div class="info__teacher">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eius nobis sequi nostrum exercitationem
+                            deleniti facilis natus? Vel quasi voluptatum tempore
+                            reprehenderit temporibus tempora beatae doloremque a
+                            ullam, nesciunt similique ducimus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
                   >
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
+                    <div
+                      class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                    >
                       <span class="course__ribbon text-white"
                         >Best selling</span
                       >
                       <img class="card-img-top" src="./img/10.jpg" alt="" />
                       <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
+                        <a href="#" class="h5">
                           The Web Developer Bootcamp In Austin
                         </a>
                         <p class="my-3 text_gray course__user">
@@ -596,51 +744,17 @@
                         </h4>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
-                  >
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div
-                        class="card-footer media align-items-center justify-content-between"
-                      >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
+                    <div class="course__info">
+                      <div class="info__content p-5">
+                        <div class="info__teacher">
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eius nobis sequi nostrum exercitationem
+                            deleniti facilis natus? Vel quasi voluptatum tempore
+                            reprehenderit temporibus tempora beatae doloremque a
+                            ullam, nesciunt similique ducimus.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -651,188 +765,56 @@
 
               <div class="tab-pane fade" id="tab2" role="tabpanel">
                 <div class="row">
-                  <div class="col-lg-4 col-md-6 marginTop-30 course__item my-4">
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+                  >
+                    <a href="#">
                       <div
-                        class="card-footer media align-items-center justify-content-between"
+                        class="card text-gray overflow-hidden shadow_1 h-100 "
                       >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
+                        <span class="course__ribbon text-white"
+                          >Best selling</span
+                        >
+                        <img class="card-img-top" src="./img/10.jpg" alt="" />
+                        <div class="card-body">
+                          <a href="#" class="h5">
+                            The Web Developer Bootcamp In Austin
+                          </a>
+                          <p class="my-3 text_gray course__user">
+                            <span class="lnr lnr-user"></span>
+                            Andrew Mead
+                          </p>
+                          <ul class="list-unstyled course__raiting">
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="text_gray">
+                              <span>(4.9)</span>
+                              <span>4578</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="card-footer media align-items-center justify-content-between"
+                        >
+                          <ul class="list-unstyled mb-0 text_gray">
+                            <li class="mb-1">
+                              <i class="fa fa-headphones-alt mr-2"></i>
+                              46 lectures
+                            </li>
+                            <li class="mb-1">
+                              <span class="lnr lnr-clock mr-2"></span>
+                              27.5 hours
+                            </li>
+                          </ul>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 marginTop-30 course__item my-4">
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div
-                        class="card-footer media align-items-center justify-content-between"
-                      >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 marginTop-30 course__item my-4">
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div
-                        class="card-footer media align-items-center justify-content-between"
-                      >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 marginTop-30 course__item my-4">
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div
-                        class="card-footer media align-items-center justify-content-between"
-                      >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
-                      </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <!-- END row-->
@@ -841,96 +823,56 @@
 
               <div class="tab-pane fade" id="tab3" role="tabpanel">
                 <div class="row">
-                  <div class="col-lg-4 col-md-6 marginTop-30 course__item my-4">
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+                  >
+                    <a href="#">
                       <div
-                        class="card-footer media align-items-center justify-content-between"
+                        class="card text-gray overflow-hidden shadow_1 h-100 "
                       >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
+                        <span class="course__ribbon text-white"
+                          >Best selling</span
+                        >
+                        <img class="card-img-top" src="./img/10.jpg" alt="" />
+                        <div class="card-body">
+                          <a href="#" class="h5">
+                            The Web Developer Bootcamp In Austin
+                          </a>
+                          <p class="my-3 text_gray course__user">
+                            <span class="lnr lnr-user"></span>
+                            Andrew Mead
+                          </p>
+                          <ul class="list-unstyled course__raiting">
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="text_gray">
+                              <span>(4.9)</span>
+                              <span>4578</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="card-footer media align-items-center justify-content-between"
+                        >
+                          <ul class="list-unstyled mb-0 text_gray">
+                            <li class="mb-1">
+                              <i class="fa fa-headphones-alt mr-2"></i>
+                              46 lectures
+                            </li>
+                            <li class="mb-1">
+                              <span class="lnr lnr-clock mr-2"></span>
+                              27.5 hours
+                            </li>
+                          </ul>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 marginTop-30 course__item my-4">
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div
-                        class="card-footer media align-items-center justify-content-between"
-                      >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
-                      </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <!-- END row-->
@@ -939,96 +881,56 @@
 
               <div class="tab-pane fade" id="tab4" role="tabpanel">
                 <div class="row">
-                  <div class="col-lg-4 col-md-6 marginTop-30 course__item my-4">
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+                  >
+                    <a href="#">
                       <div
-                        class="card-footer media align-items-center justify-content-between"
+                        class="card text-gray overflow-hidden shadow_1 h-100 "
                       >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
+                        <span class="course__ribbon text-white"
+                          >Best selling</span
+                        >
+                        <img class="card-img-top" src="./img/10.jpg" alt="" />
+                        <div class="card-body">
+                          <a href="#" class="h5">
+                            The Web Developer Bootcamp In Austin
+                          </a>
+                          <p class="my-3 text_gray course__user">
+                            <span class="lnr lnr-user"></span>
+                            Andrew Mead
+                          </p>
+                          <ul class="list-unstyled course__raiting">
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="text_gray">
+                              <span>(4.9)</span>
+                              <span>4578</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="card-footer media align-items-center justify-content-between"
+                        >
+                          <ul class="list-unstyled mb-0 text_gray">
+                            <li class="mb-1">
+                              <i class="fa fa-headphones-alt mr-2"></i>
+                              46 lectures
+                            </li>
+                            <li class="mb-1">
+                              <span class="lnr lnr-clock mr-2"></span>
+                              27.5 hours
+                            </li>
+                          </ul>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 marginTop-30 course__item my-4">
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div
-                        class="card-footer media align-items-center justify-content-between"
-                      >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
-                      </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <!-- END row-->
@@ -1037,96 +939,56 @@
 
               <div class="tab-pane fade" id="tab5" role="tabpanel">
                 <div class="row">
-                  <div class="col-lg-4 col-md-6 marginTop-30 course__item my-4">
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
+                  <div
+                    class="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4"
+                  >
+                    <a href="#">
                       <div
-                        class="card-footer media align-items-center justify-content-between"
+                        class="card text-gray overflow-hidden shadow_1 h-100 "
                       >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
+                        <span class="course__ribbon text-white"
+                          >Best selling</span
+                        >
+                        <img class="card-img-top" src="./img/10.jpg" alt="" />
+                        <div class="card-body">
+                          <a href="#" class="h5">
+                            The Web Developer Bootcamp In Austin
+                          </a>
+                          <p class="my-3 text_gray course__user">
+                            <span class="lnr lnr-user"></span>
+                            Andrew Mead
+                          </p>
+                          <ul class="list-unstyled course__raiting">
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="text_gray">
+                              <span>(4.9)</span>
+                              <span>4578</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="card-footer media align-items-center justify-content-between"
+                        >
+                          <ul class="list-unstyled mb-0 text_gray">
+                            <li class="mb-1">
+                              <i class="fa fa-headphones-alt mr-2"></i>
+                              46 lectures
+                            </li>
+                            <li class="mb-1">
+                              <span class="lnr lnr-clock mr-2"></span>
+                              27.5 hours
+                            </li>
+                          </ul>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 marginTop-30 course__item my-4">
-                    <div class="card text-gray overflow-hidden shadow_1 h-100 ">
-                      <span class="course__ribbon text-white"
-                        >Best selling</span
-                      >
-                      <img class="card-img-top" src="./img/10.jpg" alt="" />
-                      <div class="card-body">
-                        <a href="page-sp-course-details.html" class="h5">
-                          The Web Developer Bootcamp In Austin
-                        </a>
-                        <p class="my-3 text_gray course__user">
-                          <span class="lnr lnr-user"></span>
-                          Andrew Mead
-                        </p>
-                        <ul class="list-unstyled course__raiting">
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="active"><i class="fas fa-star"></i></li>
-                          <li class="text_gray">
-                            <span>(4.9)</span>
-                            <span>4578</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div
-                        class="card-footer media align-items-center justify-content-between"
-                      >
-                        <ul class="list-unstyled mb-0 text_gray">
-                          <li class="mb-1">
-                            <i class="fa fa-headphones-alt mr-2"></i>
-                            46 lectures
-                          </li>
-                          <li class="mb-1">
-                            <span class="lnr lnr-clock mr-2"></span>
-                            27.5 hours
-                          </li>
-                        </ul>
-                        <h4 class="h5">
-                          <span class="text_green">$180</span>
-                        </h4>
-                      </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <!-- END row-->
@@ -1568,6 +1430,20 @@
         }
       });
     </script>
+    <!-- Hover vào class course__item thì add class course__info-show vào bên cạnh class course__info và -->
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var course__item = document.querySelector(".course__item");
+        var course__info = document.querySelector(".course__info");
+
+        course__item.addEventListener("mouseenter", function(e) {
+          course__info.classList.add("course__info-show");
+        });
+        course__item.addEventListener("mouseleave", function() {
+          course__info.classList.remove("course__info-show");
+        });
+      });
+    </script> -->
     <script src="./js/main.js"></script>
     <script src="./js/util.js"></script>
   </body>

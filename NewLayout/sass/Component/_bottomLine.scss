@@ -1,3 +1,8 @@
 .bottom_line {
   @include bottomLine();
 }
+.bottom_line_1 {
+  width: 6rem !important;
+  background-color: #00cb54 !important;
+  height: 0.2rem;
+}

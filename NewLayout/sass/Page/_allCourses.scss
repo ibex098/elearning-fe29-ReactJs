@@ -1,0 +1,54 @@
+//All Courses Button
+.allCourseButton {
+  padding: 1rem 0;
+  .allCourseItem__filter {
+    .form-control {
+      &:focus {
+        border-color: $color_green;
+        box-shadow: none;
+      }
+    }
+    a {
+      color: $color_gray;
+      &:hover {
+        color: $color_green;
+      }
+    }
+    a.active {
+      color: $color_green;
+    }
+  }
+}
+
+//All Courses Item
+.allCourseItem {
+  padding: 5rem 0;
+  .page-item {
+    a {
+      &:hover {
+        background: $color_green;
+        color: $color_white;
+        transition: all 0.3s;
+      }
+    }
+    .page-link {
+      position: relative;
+      display: inline-flex;
+      padding: 0.5rem 0.75rem;
+      margin-left: -1px;
+      line-height: 1;
+      color: $color_gray;
+      background-color: $color_white;
+      border: 1px solid #dee2e6;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .page-item.active {
+    .page-link {
+      background: $color_green;
+      color: $color_white;
+    }
+  }
+}
