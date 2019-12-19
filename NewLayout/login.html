@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Icons font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <!-- Gooogle font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700&display=swap&subset=latin-ext,vietnamese"
+      rel="stylesheet"
+    />
+
+    <title>Elearning Fe29</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="myHeader">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mx-0">
+          <ul class="list-inline d-none d-lg-block mb-0 header__item">
+            <li class="list-inline-item mr-3">
+              <div class="d-flex align-items-center">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:support@educati.com" class="ml-2"
+                  >support@educati.com</a
+                >
+              </div>
+            </li>
+            <li class="list-inline-item mr-3">
+              <div class="d-flex align-items-center">
+                <i class="fa fa-headphones-alt"></i>
+                <a href="tel:+84924444740" class="ml-2">+84924444740</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-inline mb-0 header__item">
+            <li
+              class="list-inline-item mr-0 p-3 border-right border-left border-white-0_1"
+            >
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-vimeo-v"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="myNavbar">
+      <div class="container">
+        <div class="navbar navbar-expand-lg p-0">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-align-justify"></i>
+          </button>
+          <div class="navbar-brand col-xl-3 col-lg-3 col-md-3 col-sm-2">
+            <a href="./index.html"><img src="./img/logo-black.png" alt=""/></a>
+          </div>
+          <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-toggle="dropdown"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Courses</a
+                  >
+                  <ul class="dropdown-menu" id="navbarDropdown">
+                    <li>
+                      <a href="page-sp-all-courcess.html" class="nav-link__list"
+                        >All Courses</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="page-sp-all-courcess-list.html"
+                        class="nav-link__list"
+                        >Courses List</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="page-sp-all-courcess-with-sidebar.html"
+                        class="nav-link__list"
+                        >Courses Grid</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
+            <div
+              class="collapse navbar-collapse nav__right"
+              id="navbarTogglerDemo03"
+            >
+              <ul class="navbar-nav navbar-expand-lg ml-auto">
+                <li class="nav-item nav__cart mr-3">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-toggle="dropdown"
+                  >
+                    <i class="lnr lnr-cart"></i>
+                    <span class="cart__number">1</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown__cart">
+                    <li class="cart__list">
+                      <a href="#" class="cart__item row py-1">
+                        <div class="cart__img col-3">
+                          <img src="./img/course.jpg" alt="" />
+                        </div>
+                        <div class="cart__info col-9">
+                          <h5 class="cart__item-name m-0">
+                            Management Skills: Team Leadership Skills Master
+                            Class
+                          </h5>
+                          <p class="cart__item-moTa m-0">
+                            Lawrence M. Miller, Best Selling Instructor, Author
+                            & Leadership Coach
+                          </p>
+                          <p class="cart__item-price m-0">
+                            $11.99
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class=" text-center cart__bottom">
+                      <h5 class="cart__total">
+                        ToTal:
+                        <span>$49.16</span>
+                      </h5>
+                      <button class="btn_blue">
+                        Go To Cart
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav__button my-auto">
+                  <button class="btn_green">Login</button>
+                  <button class="btn_red">Sign Up</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Login -->
+    <section class="signUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <div class="card shadow_2">
+              <div class="card-header border-bottom">
+                <h4 class="mt-4">
+                  Log In to Your Account!
+                </h4>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col my-2">
+                    <button class="btn_facebook">
+                      <i class="fab fa-facebook-f"></i>
+                      <span>Facebook Sign in</span>
+                    </button>
+                  </div>
+                  <div class="col my-2">
+                    <button class="btn_red btn_google">
+                      <i class="fab fa-google-plus-g"></i>
+                      <span>Google Sign in</span>
+                    </button>
+                  </div>
+                </div>
+                <p class="text-center my-4">
+                  OR
+                </p>
+                <form action="#" method="POST" class="px-lg-4 login_form">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i
+                        class="material-icons input-group-text bg-white text_gray"
+                        >mail_outline</i
+                      >
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control border-left-0 pl-0"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <i
+                        class="material-icons input-group-text bg-white text_gray"
+                        >lock_outline</i
+                      >
+                    </div>
+                    <input
+                      type="password"
+                      class="form-control border-left-0 pl-0"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="d-md-flex justify-content-between my-4">
+                    <div class="custom-control custom-checkbox check-sm my-2 clearfix">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="customCheck1"
+                      />
+                      <label class="custom-control-label" for="customCheck1"
+                        >Remember Me
+                      </label>
+                    </div>
+                    <a
+                      href="page-recover-password.html"
+                      class="text_green my-2 d-block"
+                      >Forgot password?</a
+                    >
+                  </div>
+                  <button class="btn_green w-100">Log In</button>
+                  <p class="my-5 text-center">
+                    Don’t have an account?
+                    <a href="page-signup.html" class="text_green">Register</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="myFooter">
+      <div class="footer__Top pt-5" style="padding-bottom: 6.25rem;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mt-5">
+              <img src="./img/logo-white1.png" alt="Logo" />
+              <div class="footer__text my-4">
+                <p>
+                  Nunc placerat mi id nisi interdm they mtolis. Praesient is
+                  haretra justo ught scel erisque placer.
+                </p>
+              </div>
+              <ul class="footer__social" style="list-style: none;">
+                <li class="social__item">
+                  <a href="#" class="iconbox"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="iconbox"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="iconbox"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="iconbox"
+                    ><i class="fab fa-pinterest-p"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 footer__contact">
+              <h4 class="text-white">Contact Us</h4>
+              <div class="bottom_line mt-3"></div>
+              <ul class="contact__list mt-4" style="list-style: none;">
+                <li class="contact__item footer__text">
+                  <i class="fa fa-headphones-alt mr-3"></i>
+                  <a href="#" class="myLink footer__text">800 567.890.576</a>
+                </li>
+                <li class="contact__item footer__text">
+                  <i class="fa fa-envelope mr-3"></i>
+                  <a href="#" class="myLink footer__text"
+                    >support@educati.com</a
+                  >
+                </li>
+                <li class="contact__item footer__text">
+                  <div class="contact__location">
+                    <i class="fa fa-map-marker-alt pt-1 mr-3"></i>
+                    <div class="location__body">
+                      <span
+                        >184 Main Collins Street Chicago, United States</span
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mt-5 footer__quickLinks">
+              <h4 class="text-white">Quick links</h4>
+              <div class="bottom_line mt-3"></div>
+              <ul class="quickLink__list mt-4" style="list-style: none;">
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">About Us</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Contact Us</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Students</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Admission</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Events</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Latest News</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5 footer_newLatter">
+              <h4 class="text-white">Newslatter</h4>
+              <div class="bottom_line mt-3"></div>
+              <div class="mt-4">
+                <p class="footer__text">
+                  Subscribe to get update and information. Don't worry, we won't
+                  send spam!
+                </p>
+                <form>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      class="form-control py-3 border-white"
+                      required=""
+                    />
+                    <div class="input-group-append">
+                      <button class="btn_green" type="submit">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom py-5 text-center">
+        <div class="container">
+          <p class="mb-0">
+            © 2019 Educati. All rights reserved. Created by
+            <a href="#" class="myLink">Nhan Nguyen</a>
+          </p>
+        </div>
+      </div>
+      <a href="#" class="backtotop cd-top text-replace js-cd-top">
+        <span class="lnr lnr-chevron-up"></span>
+      </a>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- scroll chuột thì thay đổi (roll 500px thì thêm class headerClass, roll lên lại thì remove lại class headerClass) -->
+    <script>
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 200) {
+          $(".myNavbar").addClass("scrollTop");
+        } else {
+          $(".myNavbar").removeClass("scrollTop");
+        }
+      });
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
+  </body>
+</html>

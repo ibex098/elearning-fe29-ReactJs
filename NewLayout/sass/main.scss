@@ -29,6 +29,12 @@
 //AllCourses
 @import "./Page/allCourses";
 
+//Login
+@import "./Page/login";
+
+//User Profile
+@import "./Page/userProfile";
+
 
 @import "Component/button";
 @import "./Component/bottomLine";
@@ -36,3 +42,4 @@
 @import "./Component/boxShadow";
 @import "./Component/background";
 @import "./Component/iconBox";
+@import "./Component/tabLine";

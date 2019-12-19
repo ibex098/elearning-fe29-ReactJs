@@ -54,20 +54,7 @@
       }
     }
     .courseDetails__footer {
-      .tab-line {
-        .nav-link {
-          border-bottom: 1px solid transparent;
-          border-bottom-width: 3px;
-          @include text($color_gray, $fs_20, $fw_500);
-          a {
-            text-decoration: none;
-          }
-        }
-        .nav-link.active {
-          border-bottom-color: $color_green;
-          color: $color_green;
-        }
-      }
+
       .tab-content {
         p {
           @include text($color_gray, $fs_15 + 1, $fw_500);

@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Icons font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <!-- Gooogle font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700&display=swap&subset=latin-ext,vietnamese"
+      rel="stylesheet"
+    />
+
+    <title>Elearning Fe29</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="myHeader">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mx-0">
+          <ul class="list-inline d-none d-lg-block mb-0 header__item">
+            <li class="list-inline-item mr-3">
+              <div class="d-flex align-items-center">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:support@educati.com" class="ml-2"
+                  >support@educati.com</a
+                >
+              </div>
+            </li>
+            <li class="list-inline-item mr-3">
+              <div class="d-flex align-items-center">
+                <i class="fa fa-headphones-alt"></i>
+                <a href="tel:+84924444740" class="ml-2">+84924444740</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-inline mb-0 header__item">
+            <li
+              class="list-inline-item mr-0 p-3 border-right border-left border-white-0_1"
+            >
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-vimeo-v"></i></a>
+            </li>
+            <li class="list-inline-item mr-0 p-3 border-right border-white-0_1">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="myNavbar">
+      <div class="container">
+        <div class="navbar navbar-expand-lg p-0">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-align-justify"></i>
+          </button>
+          <div class="navbar-brand col-xl-3 col-lg-3 col-md-3 col-sm-2">
+            <a href="./index.html"><img src="./img/logo-black.png" alt=""/></a>
+          </div>
+          <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-toggle="dropdown"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Courses</a
+                  >
+                  <ul class="dropdown-menu" id="navbarDropdown">
+                    <li>
+                      <a href="page-sp-all-courcess.html" class="nav-link__list dropdown-item"
+                        >All Courses</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="page-sp-all-courcess-list.html"
+                        class="nav-link__list dropdown-item"
+                        >Courses List</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="page-sp-all-courcess-with-sidebar.html"
+                        class="nav-link__list dropdown-item"
+                        >Courses Grid</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
+            <div
+              class="collapse navbar-collapse nav__right"
+              id="navbarTogglerDemo03"
+            >
+              <ul class="navbar-nav navbar-expand-lg ml-auto">
+                <li class="nav-item nav__cart mr-3">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-toggle="dropdown"
+                  >
+                    <i class="lnr lnr-cart"></i>
+                    <span class="cart__number">1</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown__cart">
+                    <li class="cart__list">
+                      <a href="#" class="cart__item row py-1">
+                        <div class="cart__img col-3">
+                          <img src="./img/course.jpg" alt="" />
+                        </div>
+                        <div class="cart__info col-9">
+                          <h5 class="cart__item-name m-0">
+                            Management Skills: Team Leadership Skills Master
+                            Class
+                          </h5>
+                          <p class="cart__item-moTa m-0">
+                            Lawrence M. Miller, Best Selling Instructor, Author
+                            & Leadership Coach
+                          </p>
+                          <p class="cart__item-price m-0">
+                            $11.99
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class=" text-center cart__bottom">
+                      <h5 class="cart__total">
+                        ToTal:
+                        <span>$49.16</span>
+                      </h5>
+                      <button class="btn_blue">
+                        Go To Cart
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+                <!-- <li class="nav-item  my-auto">
+                  <button class="btn_green">Login</button>
+                  <button class="btn_red">Sign Up</button>
+                </li> -->
+                <li class="nav-item ">
+                  <a href="#" class="nav-link p-3 dropdown-toggle" data-toggle="dropdown">
+                    <span>Nhan Nguyen</span>
+                     <img class="iconbox iconbox-sm mx-1" src="./img/11.jpg" alt="">
+                   </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa fa-user mr-2"></i>
+                        <span class="mr-2">
+                          My profile
+                        </span>
+                    </a>
+                    </li>
+                   <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa fa-envelope mr-2"></i>
+                      <span class="mr-2">Message</span>
+                      <span class="badge badge-success ml-auto">78</span>
+                     </a>
+                   </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="fa fa-cog mr-2"></i>
+                        <span class="mr-2">Another Action</span>
+                        <span class="badge badge-success ml-auto">27</span>
+                       </a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li><a class="dropdown-item" href="#">
+                      <i class="fa fa-sign-out-alt mr-2"></i>
+                      <span class="mr-2">Logout</span>
+                     </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cover -->
+    <section
+      class="myCover cover__page cover__bg flex-center"
+      style="background-image: url('./img/30 (5).jpg');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: 50% 50%;"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="cover__content col-lg-6 my-2 text-white">
+            <ol class="breadcrumb bg-transparent p-0">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Courses</a></li>
+              <li class="breadcrumb-item">Details</li>
+            </ol>
+            <h2 class="h1">
+              Courses Details
+            </h2>
+          </div>
+          <form class="col-lg-5 my-2 ml-auto cover__form p-0">
+            <div class="p-2 input-group">
+              <input
+                type="text"
+                class="form-control cover__input"
+                placeholder="what do you want to learn?"
+              />
+              <div class="cover__button">
+                <button class="btn_blue">
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Profile -->
+    <section class="userProfile">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mt-4 userProfile__left">
+            <div class="card shadow_2">
+              <div class="card-header text-center border-bottom pt-5 mb-4">
+                <img
+                  class="rounded-circle mb-4"
+                  src="./img/profile.jpg"
+                  width="200"
+                  height="200"
+                  alt=""
+                />
+                <h4>
+                  Alex Lebby
+                </h4>
+                <p class="text_gray">
+                  Front End Developer
+                </p>
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-2">
+                    <i class="fa fa-shopping-cart text_green"></i>
+                    <span class="d-block">Cart</span>
+                    <span class="h6">123</span>
+                  </li>
+                  <li class="list-inline-item m-2">
+                    <i class="fa fa-book-open text_green"></i>
+                    <span class="d-block">Courses</span>
+                    <span class="h6">27</span>
+                  </li>
+                  <li class="list-inline-item m-2">
+                    <i class="fa fa-heart text_green"></i>
+                    <span class="d-block">Wishlist</span>
+                    <span class="h6">100</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body border-bottom">
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <span class="d-block text_gray">Email address:</span>
+                    <a class="h6 text_black" href="mailto:saifullah@gmail.com"
+                      >saifullah@gmail.com</a
+                    >
+                  </li>
+                  <li class="mb-3">
+                    <span class="d-block text_gray">Phone:</span>
+                    <a class="h6 text_black" href="mailto:saifullah@gmail.com"
+                      >+91 654 784 547</a
+                    >
+                  </li>
+                  <li class="mb-3">
+                    <span class="d-block text_gray">Location:</span>
+                    <a class="h6 text_black" href="mailto:saifullah@gmail.com"
+                      >South Street, London, UK</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <p class="text_gray">
+                  Social Profile:
+                </p>
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a href="#" class="btn_outline_fb iconbox_sm">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="btn_outline_tw iconbox_sm">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="btn_outline_gg iconbox_sm">
+                      <i class="fab fa-google"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="btn_outline_linkedin iconbox_sm">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mt-4 userProfile__right">
+            <div class="card shadow_1 p-5">
+              <ul class="nav tab-line border-bottom mb-4" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active show"
+                    data-toggle="tab"
+                    href="#MyCourses"
+                    role="tab"
+                    aria-selected="true"
+                  >
+                    My Courses
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#MyWishlist"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    My Wishlist
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#myOrder"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    My Order
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#message"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    Message
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#settings"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    Settings
+                  </a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div
+                  class="tab-pane fade active show"
+                  id="MyCourses"
+                  role="tabpanel"
+                >
+                  <div class="row course__items">
+                    <div
+                      class="col-lg-6 col-md-6 marginTop-30 course__item my-4"
+                    >
+                      <div
+                        class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                      >
+                        <span class="course__ribbon text-white"
+                          >Best selling</span
+                        >
+                        <img class="card-img-top" src="./img/10.jpg" alt="" />
+                        <div class="card-body">
+                          <a href="#" class="h5">
+                            Node.js, Express & MongoDB Dev to Deployment
+                          </a>
+                          <p class="my-3 text_gray course__user">
+                            <span class="lnr lnr-user"></span>
+                            Andrew Mead
+                          </p>
+                          <ul class="list-unstyled course__raiting">
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="text_gray">
+                              <span>(4.9)</span>
+                              <span>4578</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="card-footer media align-items-center justify-content-between"
+                        >
+                          <ul class="list-unstyled mb-0 text_gray">
+                            <li class="mb-1">
+                              <i class="fa fa-headphones-alt mr-2"></i>
+                              46 lectures
+                            </li>
+                            <li class="mb-1">
+                              <span class="lnr lnr-clock mr-2"></span>
+                              27.5 hours
+                            </li>
+                          </ul>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 marginTop-30 course__item my-4"
+                    >
+                      <div
+                        class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                      >
+                        <span class="course__ribbon text-white"
+                          >Best selling</span
+                        >
+                        <img class="card-img-top" src="./img/10.jpg" alt="" />
+                        <div class="card-body">
+                          <a href="#" class="h5">
+                            Node.js, Express & MongoDB Dev to Deployment
+                          </a>
+                          <p class="my-3 text_gray course__user">
+                            <span class="lnr lnr-user"></span>
+                            Andrew Mead
+                          </p>
+                          <ul class="list-unstyled course__raiting">
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="text_gray">
+                              <span>(4.9)</span>
+                              <span>4578</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="card-footer media align-items-center justify-content-between"
+                        >
+                          <ul class="list-unstyled mb-0 text_gray">
+                            <li class="mb-1">
+                              <i class="fa fa-headphones-alt mr-2"></i>
+                              46 lectures
+                            </li>
+                            <li class="mb-1">
+                              <span class="lnr lnr-clock mr-2"></span>
+                              27.5 hours
+                            </li>
+                          </ul>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 marginTop-30 course__item my-4"
+                    >
+                      <div
+                        class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                      >
+                        <span class="course__ribbon text-white"
+                          >Best selling</span
+                        >
+                        <img class="card-img-top" src="./img/10.jpg" alt="" />
+                        <div class="card-body">
+                          <a href="#" class="h5">
+                            Node.js, Express & MongoDB Dev to Deployment
+                          </a>
+                          <p class="my-3 text_gray course__user">
+                            <span class="lnr lnr-user"></span>
+                            Andrew Mead
+                          </p>
+                          <ul class="list-unstyled course__raiting">
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="text_gray">
+                              <span>(4.9)</span>
+                              <span>4578</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="card-footer media align-items-center justify-content-between"
+                        >
+                          <ul class="list-unstyled mb-0 text_gray">
+                            <li class="mb-1">
+                              <i class="fa fa-headphones-alt mr-2"></i>
+                              46 lectures
+                            </li>
+                            <li class="mb-1">
+                              <span class="lnr lnr-clock mr-2"></span>
+                              27.5 hours
+                            </li>
+                          </ul>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 text-center mt-5">
+                      <a href="#" class="btn_outline_green">
+                        <i class="fa fa-sync"></i>
+                        Load More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- END tab-pane -->
+                <div class="tab-pane fade" id="MyWishlist" role="tabpanel">
+                  <div class="row course__items">
+                    <div
+                      class="col-lg-6 col-md-6 marginTop-30 course__item my-4"
+                    >
+                      <div
+                        class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                      >
+                        <span class="course__ribbon text-white"
+                          >Best selling</span
+                        >
+                        <img class="card-img-top" src="./img/10.jpg" alt="" />
+                        <div class="card-body">
+                          <a href="#" class="h5">
+                            Node.js, Express & MongoDB Dev to Deployment
+                          </a>
+                          <p class="my-3 text_gray course__user">
+                            <span class="lnr lnr-user"></span>
+                            Andrew Mead
+                          </p>
+                          <ul class="list-unstyled course__raiting">
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="text_gray">
+                              <span>(4.9)</span>
+                              <span>4578</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="card-footer media align-items-center justify-content-between"
+                        >
+                          <ul class="list-unstyled mb-0 text_gray">
+                            <li class="mb-1">
+                              <i class="fa fa-headphones-alt mr-2"></i>
+                              46 lectures
+                            </li>
+                            <li class="mb-1">
+                              <span class="lnr lnr-clock mr-2"></span>
+                              27.5 hours
+                            </li>
+                          </ul>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 marginTop-30 course__item my-4"
+                    >
+                      <div
+                        class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                      >
+                        <span class="course__ribbon text-white"
+                          >Best selling</span
+                        >
+                        <img class="card-img-top" src="./img/10.jpg" alt="" />
+                        <div class="card-body">
+                          <a href="#" class="h5">
+                            Node.js, Express & MongoDB Dev to Deployment
+                          </a>
+                          <p class="my-3 text_gray course__user">
+                            <span class="lnr lnr-user"></span>
+                            Andrew Mead
+                          </p>
+                          <ul class="list-unstyled course__raiting">
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="text_gray">
+                              <span>(4.9)</span>
+                              <span>4578</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="card-footer media align-items-center justify-content-between"
+                        >
+                          <ul class="list-unstyled mb-0 text_gray">
+                            <li class="mb-1">
+                              <i class="fa fa-headphones-alt mr-2"></i>
+                              46 lectures
+                            </li>
+                            <li class="mb-1">
+                              <span class="lnr lnr-clock mr-2"></span>
+                              27.5 hours
+                            </li>
+                          </ul>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-lg-6 col-md-6 marginTop-30 course__item my-4"
+                    >
+                      <div
+                        class="card text-gray overflow-hidden shadow_1 h-100 course__card"
+                      >
+                        <span class="course__ribbon text-white"
+                          >Best selling</span
+                        >
+                        <img class="card-img-top" src="./img/10.jpg" alt="" />
+                        <div class="card-body">
+                          <a href="#" class="h5">
+                            Node.js, Express & MongoDB Dev to Deployment
+                          </a>
+                          <p class="my-3 text_gray course__user">
+                            <span class="lnr lnr-user"></span>
+                            Andrew Mead
+                          </p>
+                          <ul class="list-unstyled course__raiting">
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="active"><i class="fas fa-star"></i></li>
+                            <li class="text_gray">
+                              <span>(4.9)</span>
+                              <span>4578</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="card-footer media align-items-center justify-content-between"
+                        >
+                          <ul class="list-unstyled mb-0 text_gray">
+                            <li class="mb-1">
+                              <i class="fa fa-headphones-alt mr-2"></i>
+                              46 lectures
+                            </li>
+                            <li class="mb-1">
+                              <span class="lnr lnr-clock mr-2"></span>
+                              27.5 hours
+                            </li>
+                          </ul>
+                          <h4 class="h5">
+                            <span class="text_green">$180</span>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 text-center mt-5">
+                      <a href="#" class="btn_outline_green">
+                        <i class="fa fa-sync"></i>
+                        Load More
+                      </a>
+                    </div>
+                  </div>
+                  <!-- END row-->
+                </div>
+                <!-- END tab-pane -->
+                <div class="tab-pane fade" id="myOrder" role="tabpanel">
+                  <div class="table-responsive my-4">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">Order ID</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Price</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th
+                            scope="row"
+                            class="text-dark font-weight-semiBold"
+                          >
+                            #00004673
+                          </th>
+                          <td>01 Aug 2018</td>
+                          <td>$49</td>
+                          <td>
+                            <a href="#" class="text_green p-2">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th
+                            scope="row"
+                            class="text-dark font-weight-semiBold"
+                          >
+                            #05604673
+                          </th>
+                          <td>07 Aug 2018</td>
+                          <td>$300</td>
+                          <td>
+                            <a href="#" class="text_green p-2">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th
+                            scope="row"
+                            class="text-dark font-weight-semiBold"
+                          >
+                            #07O4673
+                          </th>
+                          <td>16 Aug 2018</td>
+                          <td>$34</td>
+                          <td>
+                            <a href="#" class="text_green p-2">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th
+                            scope="row"
+                            class="text-dark font-weight-semiBold"
+                          >
+                            #06454673
+                          </th>
+                          <td>24 Aug 2018</td>
+                          <td>$10</td>
+                          <td>
+                            <a href="#" class="text_green p-2">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th
+                            scope="row"
+                            class="text-dark font-weight-semiBold"
+                          >
+                            #0000435
+                          </th>
+                          <td>28 Aug 2018</td>
+                          <td>$199</td>
+                          <td>
+                            <a href="#" class="text_green p-2">View</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- END tab-pane -->
+                <div class="tab-pane fade" id="message" role="tabpanel">
+                  <form action="#" method="POST" class="p-4">
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Name"
+                          required=""
+                        />
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email"
+                          required=""
+                        />
+                      </div>
+                      <div class="col-12 mb-4">
+                        <textarea
+                          class="form-control"
+                          placeholder="Message"
+                          rows="5"
+                          required=""
+                        ></textarea>
+                      </div>
+                      <div class="col-12 mb-4">
+                        <button class="btn_green">Send Now</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- END tab-pane -->
+                <div class="tab-pane fade" id="settings" role="tabpanel">
+                  <div class="border-bottom mb-4 pb-4 uploadAvatar">
+                    <h4>
+                      Upload Avatar
+                    </h4>
+                    <div class="media align-items-end mt-4">
+                      <div class="position-relative">
+                        <input
+                          type="file"
+                          class="opacity-0 position-absolute as-parent"
+                        />
+                        <img src="./img/placeholder-1.jpg" alt="" />
+                      </div>
+                      <div class="media-body ml-4 mb-4 mb-md-0">
+                        <p class="text_gray">
+                          JPG or PNG 200x200 px
+                        </p c>
+                        <a href=""></a>
+                        <button class="btn_outline_green">
+                          <input
+                            type="file"
+                            class="opacity-0 position-absolute"
+                          />
+                          Upload
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="border-bottom mb-4 pb-4 manageAcc">
+                    <h4 class="mb-4">
+                      Manage your Account
+                    </h4>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Full Name</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="Nhan Nguyen"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Position</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="FrontEnd Web Developer"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Email</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="email"
+                          class="form-control"
+                          value="nhan120298@gmail.com"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Phone</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          value="+8492 4444 740"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Location</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          value="D4 HCM Viet Nam"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="border-bottom mb-4 pb-4">
+                    <h4 class="mb-4">
+                      Security Settings
+                    </h4>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Current Password</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="password"
+                          class="form-control"
+                          value="123456"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >New Password</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="12345678"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Confirm Password</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="12345678"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="border-bottom mb-4 pb-4">
+                    <h4 class="mb-4">
+                      Social Account
+                    </h4>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Facebook</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="https://fb.com/dier0298"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Twitter</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="https://Twitter.com/dier0298"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Linkdin</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="https://Linkdin.com/dier0298"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label class="col-md-3 col-form-label text-dark"
+                        >Google</label
+                      >
+                      <div class="col-md-9">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="https://Google.com/dier0298"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="border-bottom mb-4 pb-4">
+                    <h4 class="mb-4">
+                      About You
+                    </h4>
+                    <textarea rows="6" class="form-control">
+Dummy text of the printing and typesetting industry. It was popular ised in the kest with the release of Letraset sheets contain was luing lorem kepsum passages, and more recently with desktop publishing software.
+                     </textarea
+                    >
+                  </div>
+                  <div class="my-5">
+                    <button class="btn_green m-2">Update Profile</button>
+                    <button class="btn_red m-2">Cancel</button>
+                  </div>
+                </div>
+                <!-- END tab-pane -->
+              </div>
+              <!-- END tab-content-->
+            </div>
+            <!-- END card-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="myFooter">
+      <div class="footer__Top pt-5" style="padding-bottom: 6.25rem;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mt-5">
+              <img src="./img/logo-white1.png" alt="Logo" />
+              <div class="footer__text my-4">
+                <p>
+                  Nunc placerat mi id nisi interdm they mtolis. Praesient is
+                  haretra justo ught scel erisque placer.
+                </p>
+              </div>
+              <ul class="footer__social" style="list-style: none;">
+                <li class="social__item">
+                  <a href="#" class="iconbox"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="iconbox"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="iconbox"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="iconbox"
+                    ><i class="fab fa-pinterest-p"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 footer__contact">
+              <h4 class="text-white">Contact Us</h4>
+              <div class="bottom_line mt-3"></div>
+              <ul class="contact__list mt-4" style="list-style: none;">
+                <li class="contact__item footer__text">
+                  <i class="fa fa-headphones-alt mr-3"></i>
+                  <a href="#" class="myLink footer__text">800 567.890.576</a>
+                </li>
+                <li class="contact__item footer__text">
+                  <i class="fa fa-envelope mr-3"></i>
+                  <a href="#" class="myLink footer__text"
+                    >support@educati.com</a
+                  >
+                </li>
+                <li class="contact__item footer__text">
+                  <div class="contact__location">
+                    <i class="fa fa-map-marker-alt pt-1 mr-3"></i>
+                    <div class="location__body">
+                      <span
+                        >184 Main Collins Street Chicago, United States</span
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mt-5 footer__quickLinks">
+              <h4 class="text-white">Quick links</h4>
+              <div class="bottom_line mt-3"></div>
+              <ul class="quickLink__list mt-4" style="list-style: none;">
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">About Us</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Contact Us</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Students</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Admission</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Events</a>
+                </li>
+                <li class="quickLink__item footer__text">
+                  <a href="#" class="myLink footer__text">Latest News</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5 footer_newLatter">
+              <h4 class="text-white">Newslatter</h4>
+              <div class="bottom_line mt-3"></div>
+              <div class="mt-4">
+                <p class="footer__text">
+                  Subscribe to get update and information. Don't worry, we won't
+                  send spam!
+                </p>
+                <form>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Enter your email"
+                      class="form-control py-3 border-white"
+                      required=""
+                    />
+                    <div class="input-group-append">
+                      <button class="btn_green" type="submit">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom py-5 text-center">
+        <div class="container">
+          <p class="mb-0">
+            © 2019 Educati. All rights reserved. Created by
+            <a href="#" class="myLink">Nhan Nguyen</a>
+          </p>
+        </div>
+      </div>
+      <a href="#" class="backtotop cd-top text-replace js-cd-top">
+        <span class="lnr lnr-chevron-up"></span>
+      </a>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- scroll chuột thì thay đổi (roll 500px thì thêm class headerClass, roll lên lại thì remove lại class headerClass) -->
+    <script>
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 200) {
+          $(".myNavbar").addClass("scrollTop");
+        } else {
+          $(".myNavbar").removeClass("scrollTop");
+        }
+      });
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
+  </body>
+</html>
