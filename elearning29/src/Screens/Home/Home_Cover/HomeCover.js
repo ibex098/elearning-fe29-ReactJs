@@ -27,10 +27,10 @@ class HomeCover extends Component {
                 courses in Business, Technology and Creative Skills taught by
                 industry experts.
               </p>
-              <a href="." className="btn_green">
+              <a href="." className="btn_green mr-1">
                 Start Free Trial
               </a>
-              <a href="." className="btn_outline_white">
+              <a href="." className="btn_outline_white ml-1">
                 Become an Instructor
               </a>
             </div>
