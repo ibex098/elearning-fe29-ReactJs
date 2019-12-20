@@ -1,0 +1,87 @@
+@import "../main";
+.userProfile {
+  background-color: $bg_color_2;
+  padding: 4rem 0 6rem 0;
+  .userProfile__left {
+    .card {
+      border: none;
+      .card-header {
+        background-color: $color_white;
+        .text_gray {
+          font-size: $fs_20;
+        }
+      }
+      .card-body {
+        .text_gray {
+          font-size: $fs_20 - 3;
+        }
+        .text_black {
+          font-size: $fs_20 - 3;
+        }
+      }
+      .card-footer {
+        background-color: $color_white;
+        .text_gray {
+          font-size: $fs_20 - 3;
+        }
+      }
+    }
+  }
+  .userProfile__right {
+    .tab-content {
+      #MyCourses {
+        .course__items {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      #myWishlist {
+        .course__items {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+      #myOrder {
+        .table {
+          color: $color_gray_1;
+          thead {
+            th {
+              @include text($color_gray_1, $fs_15, $fw_400);
+            }
+          }
+          tbody {
+            th {
+              @include text($color_black, $fs_15, $fw_500);
+            }
+            a {
+              font-weight: $fw_500;
+            }
+          }
+        }
+      }
+      #message {
+        .form-control {
+          &:focus {
+            box-shadow: none;
+            border: 1px solid $color_green;
+          }
+        }
+      }
+      #settings {
+        .uploadAvatar {
+          .opacity-0 {
+            opacity: 0;
+          }
+        }
+        .form-control {
+          &:focus {
+            box-shadow: none;
+            border: 1px solid $color_green;
+          }
+        }
+      }
+    }
+  }
+}

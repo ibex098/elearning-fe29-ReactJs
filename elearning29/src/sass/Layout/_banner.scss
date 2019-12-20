@@ -1,0 +1,10 @@
+@import "../main";
+.myBanner {
+  background-color: $color_blue;
+  .banner__content {
+    p {
+      @include text($color_white, $fs_20, $fw_500);
+      line-height: 1.67;
+    }
+  }
+}

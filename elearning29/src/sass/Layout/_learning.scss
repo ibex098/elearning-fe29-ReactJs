@@ -1,0 +1,26 @@
+@import "../main";
+.learning {
+  .learning__content {
+    .learning__icon {
+      width: 60px;
+      height: 60px;
+      background-color: $color_green;
+      font-size: $fs_20;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .learning__body {
+      h4 {
+        line-height: 1.3;
+        color: $color_black;
+        letter-spacing: 0;
+        display: block;
+      }
+      p {
+        line-height: 1.76;
+        @include text($color_gray_1, $fs_15 + 1, $fw_400);
+      }
+    }
+  }
+}

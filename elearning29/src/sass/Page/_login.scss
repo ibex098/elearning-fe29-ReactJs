@@ -1,0 +1,30 @@
+@import "../main";
+.login.signUp {
+  background: $bg_color_2;
+  padding: 6rem 0;
+  .card {
+    border: none;
+    .card-header {
+      background: $color_white;
+      h4 {
+        color: $color_black;
+      }
+    }
+    .card-body {
+      padding: 2rem;
+      .login_form {
+        .input-group {
+          .form-control {
+            &:focus {
+              box-shadow: none;
+              border: 1px solid #ced4da;
+            }
+          }
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

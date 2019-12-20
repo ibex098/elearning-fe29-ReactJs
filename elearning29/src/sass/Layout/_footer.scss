@@ -1,0 +1,112 @@
+@import '../main';
+
+.myFooter {
+  .backtotop {
+    text-align: center;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: black;
+    position: fixed;
+    bottom: 3%;
+    right: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    font-weight: 400;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  .footer__Top {
+    background-color: $bg_color_gray;
+    img {
+      max-width: 100%;
+    }
+    .footer__text {
+      @include text($color_gray_2, $fs_15 + 1, $fw_400);
+      line-height: 1.76;
+      p {
+        @include text($color_gray_2, $fs_15 + 1, $fw_400);
+        line-height: 1.76;
+      }
+    }
+    .footer__social {
+      .social__item {
+        margin-right: 10px;
+        display: inline-block;
+        a {
+          color: $color_gray_2;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        color: $color_green;
+        transition: all 0.3s;
+      }
+    }
+    .footer__contact {
+      .contact__list {
+        .contact__item {
+          margin-bottom: 1rem;
+          .contact__location {
+            display: flex;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            .location__body {
+              -webkit-box-flex: 1;
+              -ms-flex: 1;
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+    .footer_newLatter {
+      .input-group {
+        .form-control {
+          position: relative;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+          width: 1%;
+          margin-bottom: 0;
+        }
+      }
+      input {
+        height: 100%;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .btn_green {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+  .footer__bottom {
+    background-color: $bg_color_gray_1;
+    p {
+      color: rgba(255, 255, 255, 0.5);
+      a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+        &:hover {
+          color: $color_green;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}

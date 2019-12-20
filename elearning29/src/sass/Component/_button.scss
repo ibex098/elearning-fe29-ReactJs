@@ -1,0 +1,140 @@
+.btn_green {
+  @include button(
+    $color_white,
+    $color_green,
+    $color_green,
+    $fw_500,
+    $color_green_1,
+    $color_white
+  );
+  @include buttonFocus();
+}
+.btn_white-green {
+  @include button(
+    $color_black,
+    $color_white,
+    $color_white,
+    $fw_500,
+    $color_green,
+    $color_white
+  );
+  @include buttonFocus();
+}
+.btn_blue {
+  @include button(
+    $color_white,
+    $color_blue,
+    $color_blue,
+    $fw_500,
+    $color_blue_1,
+    $color_white
+  );
+  @include buttonFocus();
+}
+.btn_red {
+  @include button(
+    $color_white,
+    $color_red,
+    $color_red,
+    $fw_500,
+    $color_red_1,
+    $color_white
+  );
+  @include buttonFocus();
+}
+.btn_yellow {
+  @include button(
+    $color_white,
+    $color_yellow,
+    $color_yellow,
+    $fw_500,
+    $color_yellow_1,
+    $color_white
+  );
+  @include buttonFocus();
+}
+.btn_outline_white {
+  @include button(
+    $color_white,
+    $noColor,
+    $color_white,
+    $fw_500,
+    $color_white,
+    $color_black
+  );
+  @include buttonFocus();
+}
+.btn_outline_green {
+  @include button(
+    $color_green,
+    $color_white,
+    $color_green,
+    $fw_500,
+    $color_green,
+    $color_white
+  );
+  @include buttonFocus();
+}
+.btn_border {
+  border-radius: 35px;
+  padding: 0.3125rem 0.625rem;
+}
+.btn_facebook {
+  @include button(
+    $color_white,
+    $color_blue_2,
+    $color_blue_2,
+    $fw_500,
+    $color_blue_3,
+    $color_white
+  );
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.btn_google {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn_outline_fb {
+  @include button(
+    $color_blue_2,
+    $color_blue_2,
+    $color_blue_2,
+    $fw_500,
+    $color_blue_3,
+    $color_white
+  );
+}
+.btn_outline_tw {
+  @include button(
+    $color_blue_4,
+    $color_blue_4,
+    $color_blue_4,
+    $fw_500,
+    $color_blue_4,
+    $color_white
+  );
+}
+.btn_outline_gg {
+  @include button(
+    $color_red_2,
+    $color_red_2,
+    $color_red_2,
+    $fw_500,
+    $color_red_2,
+    $color_white
+  );
+}
+.btn_outline_linkedin {
+  @include button(
+    $color_blue_5,
+    $color_blue_5,
+    $color_blue_5,
+    $fw_500,
+    $color_blue_5,
+    $color_white
+  );
+}

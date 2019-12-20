@@ -1,0 +1,18 @@
+@import "../main";
+
+.myHeader {
+  background-color: $bg_color_gray;
+  @include text($color_gray_2, $fs_15 + 1, $fw_400);
+  .header__item {
+    li {
+      a {
+        @include text($color_gray_2, $fs_15 + 1, $fw_400);
+        text-decoration: none;
+        &:hover {
+          @include text($color_green, $fs_15 + 1, $fw_400);
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}

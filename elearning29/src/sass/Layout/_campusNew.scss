@@ -1,0 +1,45 @@
+@import "../main";
+.campusNew {
+  background-color: $bg_color;
+  .campus__left {
+    .card {
+      border: none;
+      box-shadow: $box_shadow;
+      .card-text {
+        color: $color_green;
+      }
+      a {
+        color: $color_black;
+        text-decoration: none;
+        .campus__title {
+          &:hover {
+            color: $color_green;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+  .campus__right {
+    .card {
+      border: none;
+      box-shadow: $box_shadow;
+      .card-text {
+        color: $color_black;
+      }
+      .text_1 {
+        color: $color_green;
+      }
+      a {
+        color: $color_black;
+        text-decoration: none;
+        .campus__title {
+          &:hover {
+            color: $color_green;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

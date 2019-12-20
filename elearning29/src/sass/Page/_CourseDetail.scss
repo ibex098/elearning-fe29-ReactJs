@@ -1,0 +1,186 @@
+@import "../main";
+//Cover
+.cover__page {
+  padding: 4rem 0;
+  ol {
+    li {
+      &::before {
+        color: $color_white !important;
+      }
+      a {
+        text-decoration: none;
+        color: $color_white;
+      }
+    }
+  }
+}
+
+//SocialNetwork
+.socialNetwork {
+  .socialNetwork__content {
+    z-index: 10;
+    ul {
+      box-shadow: $box_shadow_2;
+    }
+    a {
+      text-decoration: none;
+      //   background: rgba(0, 203, 84, 0.15);
+    }
+    .socialNetwork__heart {
+      background: $color_white;
+      color: $color_green;
+      border: 1px solid $color_green;
+      &:hover {
+        color: $color_white;
+        background: $color_green;
+      }
+    }
+  }
+}
+
+//courseDetail
+.courseDetails {
+  padding-bottom: 6rem;
+  .courseDetails__left {
+    .courseDetails__header {
+      a {
+        text-decoration: none;
+        color: $color_black;
+        font-size: $fs_20;
+      }
+      .text_white {
+        color: $color_white;
+        font-size: $fs_15;
+        padding: 0.7rem 1rem;
+      }
+    }
+    .courseDetails__footer {
+
+      .tab-content {
+        p {
+          @include text($color_gray, $fs_15 + 1, $fw_500);
+          line-height: 1.76;
+        }
+        #tabDescription {
+          ul {
+            li {
+              position: relative;
+              padding-left: 25px;
+              line-height: 1.76;
+
+              @include text($color_gray, $fs_15 + 1, $fw_500);
+
+              i {
+                position: absolute;
+                left: 0;
+                top: 10%;
+                color: $color_green;
+              }
+              .fa-circle {
+                position: absolute;
+                left: 0;
+                top: 40%;
+                font-size: 5px;
+              }
+            }
+          }
+        }
+        #accordionCurriculum {
+          .collapsed {
+            .accordion__icon {
+              // khi click vào dấu cộng thì class collaped sẽ đc thêm vào thẻ cha của accordion__icon
+              //=> thẻ i thứ nhất sẽ ẩn đi và thẻ i thứ 2 sẽ hiện lên
+              i:first-child {
+                display: inline;
+              }
+              i:nth-child(2) {
+                display: none;
+              }
+            }
+          }
+          .accordion__icon {
+            display: inline-block;
+            color: $color_green !important;
+            // khi click vào dấu trừ thì class collaped bị ẩn đi
+            //=> thẻ i thứ nhất sẽ hiện trở lại và thẻ i thứ 2 sẽ ẩn đi
+            i:first-child {
+              display: none;
+            }
+          }
+          .curriculumButton {
+            a {
+              text-decoration: none;
+              color: $color_black;
+              span {
+                color: $color_gray;
+                font-size: $fs_15 + 2;
+                &:hover {
+                  color: $color_green;
+                  transition: all 0.3s;
+                }
+              }
+              .accordion_left {
+                color: $color_black;
+                &:hover {
+                  color: $color_black;
+                }
+              }
+            }
+          }
+          .curriculumItem {
+            .list-group-item {
+              font-weight: $fw_500;
+              a {
+                color: $color_gray;
+                text-decoration: none;
+                &:hover {
+                  color: $color_green;
+                }
+              }
+            }
+          }
+        }
+        #tabInstructors {
+          a {
+            text-decoration: none;
+          }
+        }
+        #tabReviews {
+          a {
+            text-decoration: none;
+          }
+          .flex-auto {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+  .courseDetails__right {
+    .card {
+      .card-header {
+        @include text($color_black, $fs_20, $fw_500);
+      }
+      .card-body {
+        li {
+          a {
+            text-decoration: none;
+            @include text($color_gray, $fs_15 + 1, $fw_500);
+            &:hover {
+              color: $color_green;
+              transition: all.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//youMayLike
+.youMayLike {
+  background: $bg_color_2;
+  padding: 5rem 0;
+}

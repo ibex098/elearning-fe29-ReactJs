@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html body{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: $fs_15;
+    color: $color_black;
+    background-color: $color_white;
+    line-height: $line_height;
+}

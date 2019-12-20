@@ -1,0 +1,25 @@
+@import "../main";
+.myCourse {
+  padding: 5rem 0;
+  background-color: $bg_color;
+  .course__content {
+    .course__button {
+      li {
+        .active {
+          background: #00cb54 !important;
+          border-color: #00cb54 !important;
+          color: #fff !important;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  //ẩn phần course__info khi repon xuống medium
+  @include reponsive("medium") {
+    .course__info {
+      display: none;
+    }
+  }
+}

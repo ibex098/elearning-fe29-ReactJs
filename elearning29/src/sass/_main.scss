@@ -1,0 +1,44 @@
+@import "./Hepler/variable";
+
+@import "./Base/reset";
+
+@import "./Hepler/mixin";
+@import "./Hepler/function";
+@import "./Hepler/extend";
+
+//Home Layout
+// @import "./Layout/header";
+// @import "./Layout/myNavbar";
+// @import "./Layout/cover";
+// @import "./Layout/courses";
+// @import "./Base/normalized";
+// @import "./Layout/banner";
+// @import "./Layout/categories";
+// @import "./Layout/footer";
+// @import "./Layout/campusNew";
+// @import "./Layout/admintrator";
+// @import "./Layout/logo";
+// @import "./Layout/learning";
+
+// //Course Detail page
+// @import "./Page/CourseDetail";
+
+// //CourseItem
+// @import "./Layout/courseItem";
+
+// //AllCourses
+// @import "./Page/allCourses";
+
+// //Login
+// @import "./Page/login";
+
+// //User Profile
+// @import "./Page/userProfile";
+
+@import "Component/button";
+@import "./Component/bottomLine";
+@import "./Component/text";
+@import "./Component/boxShadow";
+@import "./Component/background";
+@import "./Component/iconBox";
+@import "./Component/tabLine";

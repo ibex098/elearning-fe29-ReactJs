@@ -1,0 +1,187 @@
+@import "../main";
+.course__items {
+  .course__item {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      .course__info {
+        top: -10%;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: $box_shadow_1;
+        border-radius: 3px;
+      }
+    }
+    &:nth-child(4) {
+      //nếu course__item ở vị trí thứ 4 thì course__info sẽ hiển thị ở bên trái
+      .course__info {
+        left: -140%;
+        &:before {
+          left: 98%;
+        }
+      }
+    }
+    &:nth-child(8) {
+      //nếu course__item ở vị trí thứ 4 thì course__info sẽ hiển thị ở bên trái
+      .course__info {
+        left: -140%;
+        &:before {
+          left: 98%;
+        }
+      }
+    }
+    &:nth-child(12) {
+      //nếu course__item ở vị trí thứ 4 thì course__info sẽ hiển thị ở bên trái
+      .course__info {
+        left: -140%;
+        &:before {
+          left: 98%;
+        }
+      }
+    }
+    .card {
+      border: none;
+      .course__ribbon {
+        position: absolute;
+        background: #fff;
+        width: 200px;
+        text-align: center;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 25px;
+        left: -64px;
+        background-color: $color_green;
+      }
+      .card-body {
+        padding: 1.5rem;
+        position: relative;
+        .course__user {
+          font-size: $fs_15 + 2;
+        }
+        a {
+          text-decoration: none;
+          color: $color_black;
+          &:hover {
+            color: $color_green;
+            transition: all 0.3s;
+          }
+        }
+        .course__raiting {
+          li {
+            display: inline-block;
+          }
+          .active {
+            color: $color_yellow_2;
+          }
+        }
+      }
+      .card-footer {
+        background-color: transparent;
+        padding: 1.5rem;
+        ul {
+          font-size: $fs_15 + 1;
+        }
+      }
+    }
+    .course__info {
+      &::before {
+        // mũi tên khi hover vào course
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        top: 45%;
+        left: -2%;
+        background: #fff;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-right: none;
+        border-bottom: none;
+        z-index: 10;
+      }
+      //kích thước và vị trí của course__info(bên phải)
+      position: absolute;
+      top: -100px;
+      right: -140%;
+      width: 25rem;
+      height: auto;
+      background-color: $color_white;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s;
+      z-index: 9999;
+      .info__content {
+        .course__title {
+          a {
+            color: $color_black;
+            &:hover {
+              color: $color_green;
+              text-decoration: none;
+              transition: all 0.3s;
+            }
+          }
+        }
+        .info__view {
+          ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li {
+              display: inline-block;
+            }
+          }
+        }
+        button {
+          border-radius: 0;
+          padding: 1rem 0;
+        }
+        .info__des {
+          @include text($color_gray, $fs_15, $fw_400);
+        }
+        .info__footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .info__heart {
+            font-size: $fs_20;
+            &:hover {
+              color: $color_red;
+            }
+          }
+        }
+      }
+    }
+  }
+  .course__item-list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: $color_white;
+    a {
+      text-decoration: none;
+      color: $color_black;
+      &:hover {
+        color: $color_green;
+        transition: all 0.3s;
+      }
+    }
+    .courseItem_list-heart {
+      text-decoration: none;
+      color: $color_green;
+      border: 1px solid $color_green;
+      &:hover {
+        color: $color_white;
+        transition: all 0.3s;
+      }
+    }
+  }
+}

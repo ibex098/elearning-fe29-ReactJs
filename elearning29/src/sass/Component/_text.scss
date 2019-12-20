@@ -1,0 +1,18 @@
+.myLink {
+  @include link($color_green);
+}
+.text_gray {
+  color: $color_gray;
+}
+.text_green {
+  color: $color_green;
+}
+.text_gray {
+  color: $color_gray;
+}
+.text_black {
+  color: $color_black;
+}
+.text_yellow {
+  color: $color_yellow;
+}
