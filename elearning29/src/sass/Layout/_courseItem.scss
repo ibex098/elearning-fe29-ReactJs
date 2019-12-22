@@ -41,6 +41,14 @@
     }
     .card {
       border: none;
+      .course__img {
+        width: 100%;
+        height: 200px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
       .course__ribbon {
         position: absolute;
         background: #fff;
@@ -54,7 +62,7 @@
         background-color: $color_green;
       }
       .card-body {
-        padding: 1.5rem;
+        padding: 1.5rem 1.5rem 0rem 1.5rem;
         position: relative;
         .course__user {
           font-size: $fs_15 + 2;

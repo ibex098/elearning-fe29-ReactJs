@@ -3,18 +3,21 @@ import CourseModal from "./CourseModal";
 
 class CourseItem extends Component {
   render() {
+    const { tenKhoaHoc, hinhAnh, moTa, luotXem, nguoiTao } = this.props.item;
     return (
       <div className="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4">
         <div className="card text-gray overflow-hidden shadow_1 h-100 course__card">
           <span className="course__ribbon text-white">Best selling</span>
-          <img className="card-img-top" src="./img/10.jpg" alt=".." />
+          <div className="course__img">
+            <img className="card-img-top" src={hinhAnh} alt="..." />
+          </div>
           <div className="card-body">
             <a href="." className="h5">
-              Node.js, Express &amp; MongoDB Dev to Deployment
+              {tenKhoaHoc}
             </a>
-            <p className="my-3 text_gray course__user">
-              <span className="lnr lnr-user" />
-              Andrew Mead
+            <p className="my-3 text_red course__user">
+              <span className="lnr lnr-user mr-2 text_gray" />
+              {nguoiTao.hoTen}
             </p>
             <ul className="list-unstyled course__raiting">
               <li className="active">
@@ -42,7 +45,7 @@ class CourseItem extends Component {
             <ul className="list-unstyled mb-0 text_gray">
               <li className="mb-1">
                 <i className="fa fa-headphones-alt mr-2" />
-                46 lectures
+                {luotXem} lectures
               </li>
               <li className="mb-1">
                 <span className="lnr lnr-clock mr-2" />
@@ -55,7 +58,7 @@ class CourseItem extends Component {
           </div>
         </div>
         {/* Course Modal */}
-        <CourseModal />
+        <CourseModal moTa={moTa} />
       </div>
     );
   }

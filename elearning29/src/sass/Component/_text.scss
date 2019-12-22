@@ -2,17 +2,17 @@
   @include link($color_green);
 }
 .text_gray {
-  color: $color_gray;
+  color: $color_gray!important;
 }
 .text_green {
-  color: $color_green;
-}
-.text_gray {
-  color: $color_gray;
+  color: $color_green!important;
 }
 .text_black {
-  color: $color_black;
+  color: $color_black!important;
 }
 .text_yellow {
-  color: $color_yellow;
+  color: $color_yellow!important;
+}
+.text_red {
+  color: $color_red!important;
 }

@@ -3,7 +3,7 @@ import CourseReducer from "./CourseReducer";
 
 const RootReducer = combineReducers({
   //state
-  CourseList: CourseReducer
+  CourseCategories: CourseReducer
 });
 
 export default RootReducer;

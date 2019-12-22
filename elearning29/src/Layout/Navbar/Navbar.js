@@ -3,6 +3,7 @@ import "../../sass/Layout/_myNavbar.scss";
 import Cart from "./Cart/Cart";
 import NavbarButton from "./NavbarButton";
 import MenuItem from "./MenuItem";
+import { Link, NavLink } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
@@ -22,9 +23,9 @@ class Navbar extends Component {
               <i className="fa fa-align-justify" />
             </button>
             <div className="navbar-brand col-xl-3 col-lg-3 col-md-3 col-sm-2">
-              <a href="./index.html">
+              <Link to="/home">
                 <img src="./img/logo-black.png" alt="..." />
-              </a>
+              </Link>
             </div>
             <div className="col-xl-6 col-lg-5 col-md-6 col-sm-6">
               <div
@@ -32,10 +33,15 @@ class Navbar extends Component {
                 id="navbarTogglerDemo03"
               >
                 <ul className="navbar-nav m-auto mt-2 mt-lg-0">
-                  <li className="nav-item active">
-                    <a className="nav-link" href="./index.html">
+                  <li className="nav-item">
+                    <NavLink activeClassName="text_green" exact to="/" className="nav-link" href="./index.html">
                       Home
-                    </a>
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink activeClassName="text_green" to="/detail" className="nav-link" href="">
+                      Course Detail
+                    </NavLink>
                   </li>
                   {/* MenuItem */}
                   <MenuItem />

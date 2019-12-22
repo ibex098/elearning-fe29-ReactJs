@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import AddToCart from "./AddToCart";
 
 class CourseModal extends Component {
   render() {
@@ -25,12 +26,9 @@ class CourseModal extends Component {
               </li>
             </ul>
           </div>
-          <p className="info__des">
-            Management Skills Certification in Developing People, Leading Teams
-            &amp; Process Improvement Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Quisquam, numquam. Lorem ipsum dolor sit amet.
-          </p>
-          <button className="btn_blue w-100">ADD TO CART</button>
+          <p className="info__des">{this.props.moTa}</p>
+          {/* Add To Cart */}
+          <AddToCart />
           <div className="info__footer mt-5">
             <div className="info__heart">
               <span className="lnr lnr-heart" />
