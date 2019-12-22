@@ -7,7 +7,11 @@ class CourseCategories extends Component {
   render() {
     return (
       <div className="tab-content course__tab">
-        <div className="tab-pane fade show active" role="tabpanel">
+        <div
+          className="tab-pane fade show active"
+          id={this.props.choosenCategories}
+          role="tabpanel"
+        >
           <div className="row course__items">
             {/* Course Item */}
             {this.props.courseCategories.map((item, index) => {
@@ -19,9 +23,9 @@ class CourseCategories extends Component {
     );
   }
   componentDidMount() {
-    // if (this.props.choosenCategories) {
-    // }
     const categoriesId = this.props.choosenCategories;
+    console.log(this.props.choosenCategories);
+
     this.props.dispatch(fetchCourseCategories(categoriesId));
   }
   componentDidUpdate(prevProps) {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchCategories } from "../../../Redux/Action/Action";
-import { SET_CATEGORIES } from "../../../Redux/Action/Type";
+import { fetchCategories, choosenCategories } from "../../../Redux/Action/Action";
+// import { SET_CATEGORIES } from "../../../Redux/Action/Type";
 
 class Categories extends Component {
   render() {
@@ -15,7 +15,15 @@ class Categories extends Component {
             return (
               <li key={index}>
                 <button
-                  className={this.props.choosenCategories === item.maDanhMuc ? "btn_green m-2 shadow_1" : "btn_white-green m-2 shadow_1"}
+                  className={
+                    this.props.choosenCategories === item.maDanhMuc
+                      ? "btn_green m-2 shadow_1"
+                      : "btn_white-green m-2 shadow_1"
+                  }
+                  data-toggle="tab"
+                  href={this.props.choosenCategories}
+                  role="tab"
+                  aria-selected="true"
                   onClick={() => this._chooseCategories(item.maDanhMuc)}
                 >
                   {item.tenDanhMuc}
@@ -31,10 +39,7 @@ class Categories extends Component {
     this.props.dispatch(fetchCategories());
   }
   _chooseCategories = payload => {
-    this.props.dispatch({
-      type: SET_CATEGORIES,
-      payload
-    });
+    this.props.dispatch(choosenCategories(payload));
   };
 }
 

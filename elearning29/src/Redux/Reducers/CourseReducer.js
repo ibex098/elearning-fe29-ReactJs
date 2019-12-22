@@ -8,7 +8,7 @@ import {
 const initialState = {
   categoriesList: [],
   courseCategories: [],
-  choosenCategories: "BackEnd"
+  choosenCategories: "FrontEnd"
 };
 
 const CourseReducer = (state = initialState, { type, payload }) => {
@@ -17,12 +17,12 @@ const CourseReducer = (state = initialState, { type, payload }) => {
       state.categoriesList = payload;
       return { ...state };
 
-    case FETCH_COURSE_CATEGORIES:
-      state.courseCategories = payload;
-      return { ...state };
-
     case SET_CATEGORIES:
       state.choosenCategories = payload;
+      return { ...state };
+
+    case FETCH_COURSE_CATEGORIES:
+      state.courseCategories = payload;
       return { ...state };
 
     default:
