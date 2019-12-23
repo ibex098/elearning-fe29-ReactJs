@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CourseItem from "../CourseItem/CourseItem";
 import { connect } from "react-redux";
-import { fetchCourseCategories } from "../../../Redux/Action/Action";
+import { setCourseCategories } from "../../../Redux/Action/Action";
 
 class CourseCategories extends Component {
   render() {
@@ -22,18 +22,12 @@ class CourseCategories extends Component {
       </div>
     );
   }
+  // hàm chạy đầu tiên sau khi render giao diện: fetch dữ liệu của category về
+  // category sét cứng là FrontEnd
   componentDidMount() {
     const categoriesId = this.props.choosenCategories;
-    console.log(this.props.choosenCategories);
-
-    this.props.dispatch(fetchCourseCategories(categoriesId));
-  }
-  componentDidUpdate(prevProps) {
-    if (this.props.choosenCategories && !prevProps.choosenCategories) {
-      const categoriesId = this.props.choosenCategories;
-      this.props.dispatch(fetchCourseCategories(categoriesId));
-    }
-    console.log(prevProps);
+    // console.log(this.props.choosenCategories);
+    this.props.dispatch(setCourseCategories(categoriesId));
   }
 }
 

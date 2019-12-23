@@ -2,7 +2,6 @@
 import {
   FETCH_CATEGORIES,
   FETCH_COURSE_CATEGORIES,
-  SET_CATEGORIES
 } from "../Action/Type";
 
 const initialState = {
@@ -15,10 +14,6 @@ const CourseReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case FETCH_CATEGORIES:
       state.categoriesList = payload;
-      return { ...state };
-
-    case SET_CATEGORIES:
-      state.choosenCategories = payload;
       return { ...state };
 
     case FETCH_COURSE_CATEGORIES:

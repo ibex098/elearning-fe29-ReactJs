@@ -5,11 +5,18 @@ class CourseModal extends Component {
   render() {
     return (
       <div className="course__info text-inherit">
-        <div className="info__content p-4">
+        <div className="info__content px-4">
           <p>Last updated: 12/2016</p>
+          <div>
+            <img src="./img/30 (9).jpg" className="iconbox" alt="..." />
+            <span className="text_red ml-3">
+              {this.props.item.nguoiTao.hoTen}a
+            </span>
+          </div>
           <h5 className="my-4 course__title">
-            <a href=".">Node.js, Express &amp; MongoDB Dev to Deployment</a>
+            <a href=".">{this.props.item.tenKhoaHoc}</a>
           </h5>
+          <p className="info__des">{this.props.item.moTa}</p>
           <div className="info__view">
             <ul className="list-unstyled">
               <li>
@@ -26,10 +33,9 @@ class CourseModal extends Component {
               </li>
             </ul>
           </div>
-          <p className="info__des">{this.props.moTa}</p>
           {/* Add To Cart */}
           <AddToCart />
-          <div className="info__footer mt-5">
+          <div className="info__footer mt-3">
             <div className="info__heart">
               <span className="lnr lnr-heart" />
               Add To Wishlist

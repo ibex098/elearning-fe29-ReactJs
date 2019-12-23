@@ -1,6 +1,7 @@
 import { resConnector } from "./Index";
 
 class CourseServices {
+  // lấy toàn bộ khóa học theo mã nhõm GP01
   fetchCourse() {
     return resConnector({
       url: "/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP01",
@@ -17,7 +18,7 @@ class CourseServices {
   }
 
   //lấy khóa học theo danh mục
-  fetchCourseCategories(categoriesId) {
+  setCourseCategories(categoriesId) {
     return resConnector({
       url:
         `/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=${categoriesId}&MaNhom=GP01`,

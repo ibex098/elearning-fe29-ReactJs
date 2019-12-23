@@ -3,7 +3,7 @@ import CourseModal from "./CourseModal";
 
 class CourseItem extends Component {
   render() {
-    const { tenKhoaHoc, hinhAnh, moTa, luotXem, nguoiTao } = this.props.item;
+    const { tenKhoaHoc, hinhAnh, luotXem, nguoiTao } = this.props.item;
     return (
       <div className="col-lg-3 col-md-4 col-sm-6 marginTop-30 course__item my-4">
         <div className="card text-gray overflow-hidden shadow_1 h-100 course__card">
@@ -58,7 +58,7 @@ class CourseItem extends Component {
           </div>
         </div>
         {/* Course Modal */}
-        <CourseModal moTa={moTa} />
+        <CourseModal item={this.props.item} />
       </div>
     );
   }

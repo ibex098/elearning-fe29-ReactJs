@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchCategories, choosenCategories } from "../../../Redux/Action/Action";
+import {
+  fetchCategories,
+  setCourseCategories
+} from "../../../Redux/Action/Action";
 // import { SET_CATEGORIES } from "../../../Redux/Action/Type";
 
 class Categories extends Component {
@@ -8,7 +11,7 @@ class Categories extends Component {
     return (
       <>
         <ul
-          className="nav nav-pills justify-content-center course__button mb-5"
+          className="nav nav-pills justify-content-center course__button"
           role="tablist"
         >
           {this.props.courseCategories.map((item, index) => {
@@ -17,7 +20,7 @@ class Categories extends Component {
                 <button
                   className={
                     this.props.choosenCategories === item.maDanhMuc
-                      ? "btn_green m-2 shadow_1"
+                      ? "active btn_white-green m-2 shadow_1"
                       : "btn_white-green m-2 shadow_1"
                   }
                   data-toggle="tab"
@@ -38,8 +41,10 @@ class Categories extends Component {
   componentDidMount() {
     this.props.dispatch(fetchCategories());
   }
-  _chooseCategories = payload => {
-    this.props.dispatch(choosenCategories(payload));
+  //khi bấm vào category thì chạy hàm setCourseCategories để dispatch action lên store
+  //truyền Id của category đó vào Action => set động category trên Service => fetch các khóa học của category đó
+  _chooseCategories = categoriesId => {
+    this.props.dispatch(setCourseCategories(categoriesId));
   };
 }
 

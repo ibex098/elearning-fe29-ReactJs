@@ -13,11 +13,27 @@
     .card-body {
       padding: 2rem;
       .login_form {
+        position: relative;
+        .validateUser{
+          // position: absolute;
+        }
+        .input-group-prepend {
+          i {
+            border: 1px solid $color_green;
+            padding-top: 12px;
+            font-size: 1rem;
+          }
+          .input-group-text{
+            border: 1px solid $color_green!important;
+
+          }
+        }
         .input-group {
           .form-control {
+            border-left: 1px solid $color_green!important;
             &:focus {
               box-shadow: none;
-              border: 1px solid #ced4da;
+              border: 1px solid $color_green;
             }
           }
         }

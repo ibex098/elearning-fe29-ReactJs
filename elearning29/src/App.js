@@ -5,6 +5,7 @@ import Footer from "./Layout/Footer";
 import Home from "./Screens/Home/HomeIndex";
 import DetailIndex from "./Screens/CourseDetail/DetailIndex";
 import { Switch, BrowserRouter, Route } from "react-router-dom";
+import SignUp from "./Screens/SignUp/SignUp";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/detail" component={DetailIndex} />
+        <Route path="/signup" component={SignUp} />
         <Route path="/home" component={Home} />
         <Route path="/" component={Home} />
       </Switch>
