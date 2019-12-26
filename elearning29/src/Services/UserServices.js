@@ -16,5 +16,13 @@ class UserServices {
       method: "GET"
     });
   }
+  // đăng nhập
+  login(userLogin) {
+    return resConnector({
+      url: "/api/QuanLyNguoiDung/DangNhap",
+      method: "POST",
+      data: userLogin
+    });
+  }
 }
 export default UserServices;

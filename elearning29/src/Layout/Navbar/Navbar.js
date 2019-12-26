@@ -4,6 +4,8 @@ import Cart from "./Cart/Cart";
 import NavbarButton from "./NavbarButton";
 import MenuItem from "./MenuItem";
 import { Link, NavLink } from "react-router-dom";
+import { connect } from "react-redux";
+import NavbarUser from "./NavbarUser";
 
 class Navbar extends Component {
   render() {
@@ -34,12 +36,23 @@ class Navbar extends Component {
               >
                 <ul className="navbar-nav m-auto mt-2 mt-lg-0">
                   <li className="nav-item">
-                    <NavLink activeClassName="text_green" exact to="/" className="nav-link" href="./index.html">
+                    <NavLink
+                      activeClassName="text_green"
+                      exact
+                      to="/"
+                      className="nav-link"
+                      href="./index.html"
+                    >
                       Home
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink activeClassName="text_green" to="/detail" className="nav-link" href="">
+                    <NavLink
+                      activeClassName="text_green"
+                      to="/detail"
+                      className="nav-link"
+                      href=""
+                    >
                       Course Detail
                     </NavLink>
                   </li>
@@ -56,9 +69,10 @@ class Navbar extends Component {
                 <ul className="navbar-nav navbar-expand-lg ml-auto">
                   {/* Cart */}
                   <Cart />
-
-                  {/* Button */}
-                  <NavbarButton />
+                  {/* kiểm tra tồn tại credentials trên UserReducer
+                      !null => hiển thị component User ở navbar, null => hiển thị button
+                  */}
+                  {this.props.credentials ? <NavbarUser /> : <NavbarButton />}
                 </ul>
               </div>
             </div>
@@ -69,4 +83,8 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+const mapStateToProps = state => ({
+  credentials: state.User.credentials
+});
+
+export default connect(mapStateToProps, null)(Navbar);

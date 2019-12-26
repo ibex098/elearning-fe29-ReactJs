@@ -5,7 +5,7 @@ import UserReducer from "./UserReducer";
 const RootReducer = combineReducers({
   //state
   CourseCategories: CourseReducer,
-  UserList: UserReducer
+  User: UserReducer
 });
 
 export default RootReducer;

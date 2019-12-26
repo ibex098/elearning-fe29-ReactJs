@@ -3,7 +3,7 @@ import "../../sass/Page/_login.scss";
 import { Form, Formik, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 import { connect } from "react-redux";
-import { signUp, fetchUserList } from "../../Redux/Action/Action";
+import { signUp } from "../../Redux/Action/UserAction";
 
 const signUpUserSchema = yup.object().shape({
   taiKhoan: yup.string().required("Username is required!"),
@@ -22,7 +22,9 @@ const signUpUserSchema = yup.object().shape({
 
 class SignUp extends Component {
   _handleSubmit = values => {
-    this.props.dispatch(signUp(values));
+    // let valid = true;
+    this.props.dispatch(signUp(values, this.props.history));
+    console.log(this.props);
   };
   render() {
     return (
@@ -50,6 +52,7 @@ class SignUp extends Component {
                     </div>
                   </div>
                   <p className="text-center my-4">OR</p>
+                  {/* Form SignUp */}
                   <Formik
                     initialValues={{
                       taiKhoan: "",
@@ -226,15 +229,12 @@ class SignUp extends Component {
       </section>
     );
   }
-//   componentDidMount() {
-//     this.props.dispatch(fetchUserList());
-//   }
 }
 
-const mapStateToProps = state => {
-  return {
-    userList: state.UserList.userList
-  };
-};
+// const mapStateToProps = state => {
+//   return {
+//     userList: state.User.userList
+//   };
+// };
 
-export default connect(mapStateToProps, null)(SignUp);
+export default connect(null, null)(SignUp);

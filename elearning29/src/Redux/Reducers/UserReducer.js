@@ -1,7 +1,8 @@
-import { ADD_USER, FETCH_USER_LIST } from "../Action/Type";
+import { ADD_USER, LOGIN, LOGOUT } from "../Action/Type";
 
 const initialState = {
-  userList: []
+  userList: [],
+  credentials: null //biến thông tin đăng nhập của người dùng
 };
 
 const UserReducer = (state = initialState, { type, payload }) => {
@@ -9,8 +10,11 @@ const UserReducer = (state = initialState, { type, payload }) => {
     case ADD_USER:
       return { ...state };
 
-    case FETCH_USER_LIST:
-      state.userList = payload;
+    case LOGIN:
+      state.credentials = payload;
+      return { ...state };
+
+    case LOGOUT:
       return { ...state };
 
     default:

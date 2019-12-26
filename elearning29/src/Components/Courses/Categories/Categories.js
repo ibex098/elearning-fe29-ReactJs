@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import {
   fetchCategories,
   setCourseCategories
-} from "../../../Redux/Action/Action";
+} from "../../../Redux/Action/CourseAction";
 // import { SET_CATEGORIES } from "../../../Redux/Action/Type";
 
 class Categories extends Component {

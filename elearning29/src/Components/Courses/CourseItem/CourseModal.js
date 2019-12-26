@@ -10,7 +10,7 @@ class CourseModal extends Component {
           <div>
             <img src="./img/30 (9).jpg" className="iconbox" alt="..." />
             <span className="text_red ml-3">
-              {this.props.item.nguoiTao.hoTen}a
+              {this.props.item.nguoiTao.hoTen}
             </span>
           </div>
           <h5 className="my-4 course__title">

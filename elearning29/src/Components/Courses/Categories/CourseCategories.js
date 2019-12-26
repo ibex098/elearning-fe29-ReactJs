@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CourseItem from "../CourseItem/CourseItem";
 import { connect } from "react-redux";
-import { setCourseCategories } from "../../../Redux/Action/Action";
+import { setCourseCategories } from "../../../Redux/Action/CourseAction";
 
 class CourseCategories extends Component {
   render() {

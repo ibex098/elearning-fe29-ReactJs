@@ -8,28 +8,28 @@ class CourseDetailRight extends Component {
           <h4 className="card-header border-bottom mb-0 h6">Choose Category</h4>
           <ul className="card-body list-unstyled mb-0 p-4">
             <li className="mb-2">
-              <a href>All Courses</a>
+              <a href=".">All Courses</a>
             </li>
             <li className="mb-2">
-              <a href>Web Development</a>
+              <a href=".">Web Development</a>
             </li>
             <li className="mb-2">
-              <a href>Mobile Apps</a>
+              <a href=".">Mobile Apps</a>
             </li>
             <li className="mb-2">
-              <a href>Business</a>
+              <a href=".">Business</a>
             </li>
             <li className="mb-2">
-              <a href>IT &amp; Software</a>
+              <a href=".">IT &amp; Software</a>
             </li>
             <li className="mb-2">
-              <a href>Data Science</a>
+              <a href=".">Data Science</a>
             </li>
             <li className="mb-2">
-              <a href>Design</a>
+              <a href=".">Design</a>
             </li>
             <li className="mb-2">
-              <a href>Marketing</a>
+              <a href=".">Marketing</a>
             </li>
           </ul>
         </div>
@@ -37,22 +37,22 @@ class CourseDetailRight extends Component {
           <h4 className="card-header border-bottom mb-0 h6">Filter By</h4>
           <ul className="card-body list-unstyled mb-0 p-4">
             <li className="mb-2">
-              <a href>All Courses</a>
+              <a href=".">All Courses</a>
             </li>
             <li className="mb-2">
-              <a href>Featured Courses</a>
+              <a href=".">Featured Courses</a>
             </li>
             <li className="mb-2">
-              <a href>Popular Courses</a>
+              <a href=".">Popular Courses</a>
             </li>
             <li className="mb-2">
-              <a href>Starting Soon</a>
+              <a href=".">Starting Soon</a>
             </li>
             <li className="mb-2">
-              <a href>Intermediate</a>
+              <a href=".">Intermediate</a>
             </li>
             <li className="mb-2">
-              <a href>Advanced</a>
+              <a href=".">Advanced</a>
             </li>
           </ul>
         </div>
@@ -60,13 +60,13 @@ class CourseDetailRight extends Component {
           <h4 className="card-header border-bottom mb-0 h6">By Cost</h4>
           <ul className="card-body list-unstyled mb-0 p-4">
             <li className="mb-2">
-              <a href>All Courses</a>
+              <a href=".">All Courses</a>
             </li>
             <li className="mb-2">
-              <a href>Paid Courses</a>
+              <a href=".">Paid Courses</a>
             </li>
             <li className="mb-2">
-              <a href>Free Courses</a>
+              <a href=".">Free Courses</a>
             </li>
           </ul>
         </div>
