@@ -2,6 +2,8 @@ import CourseService from "../../Services/CourseService";
 import {
   FETCH_COURSE_CATEGORIES,
   FETCH_CATEGORIES,
+  FETCH_ALL_COURSES,
+  FETCH_COURSE_DETAIL
 } from "./Type";
 
 const courseService = new CourseService();
@@ -34,7 +36,7 @@ export const setCourseCategories = categoriesId => {
     courseService
       .setCourseCategories(categoriesId)
       .then(res => {
-        console.log(res.data);
+        // console.log(res.data);
         dispatch(reduxAction(FETCH_COURSE_CATEGORIES, res.data));
       })
       .catch(err => {
@@ -43,3 +45,32 @@ export const setCourseCategories = categoriesId => {
   };
 };
 
+// lấy tất cả khóa học theo mã nhóm GP01
+export const fetchAllCourses = () => {
+  return dispatch => {
+    courseService
+      .fetchAllCourses()
+      .then(res => {
+        console.log(res.data);
+        dispatch(reduxAction(FETCH_ALL_COURSES, res.data));
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+};
+
+// lấy thông tin khóa học với mã khóa học là tham số truyền vào
+export const fetchCourseDetail = courseId => {
+  return dispatch => {
+    courseService
+      .fetchCourseDetail(courseId)
+      .then(res => {
+        console.log(res.data);
+        dispatch(reduxAction(FETCH_COURSE_DETAIL, res.data));
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+};

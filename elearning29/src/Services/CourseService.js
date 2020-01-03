@@ -20,8 +20,21 @@ class CourseServices {
   //lấy khóa học theo danh mục
   setCourseCategories(categoriesId) {
     return resConnector({
-      url:
-        `/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=${categoriesId}&MaNhom=GP01`,
+      url: `/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=${categoriesId}&MaNhom=GP01`,
+      method: "GET"
+    });
+  }
+  //lấy toàn bộ khóa học theo mã nhóm là GP01
+  fetchAllCourses() {
+    return resConnector({
+      url: "/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP01",
+      method: "GET"
+    });
+  }
+  //lấy thông tin khóa học
+  fetchCourseDetail(courseId) {
+    return resConnector({
+      url: `/api/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=${courseId}`,
       method: "GET"
     });
   }

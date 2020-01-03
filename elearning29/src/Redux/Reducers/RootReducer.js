@@ -4,7 +4,7 @@ import UserReducer from "./UserReducer";
 
 const RootReducer = combineReducers({
   //state
-  CourseCategories: CourseReducer,
+  CourseList: CourseReducer,
   User: UserReducer
 });
 

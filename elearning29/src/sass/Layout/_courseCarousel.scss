@@ -1,0 +1,46 @@
+@import "./../main";
+.courseCarousel {
+  // background-color: $bg_color;
+  padding: 5rem 0;
+  .slick-slider {
+    .slick-prev {
+      color: $color_green !important;
+      background-color: $color_white;
+      &::before {
+        color: $color_green;
+      }
+    }
+    .slick-next {
+      color: $color_green !important;
+      background-color: $color_white;
+      &::before {
+        color: $color_green;
+      }
+    }
+    .slick-list {
+      .slick-slide {
+        a {
+          text-decoration: none;
+          .course__items {
+            .course__item {
+              .card {
+                height: 110% !important;
+                position: relative;
+                img {
+                  // position: absolute;
+                  background-color: rgba(0, 0, 0, 0.5);
+                  width: 100%;
+                  height: 100%;
+                  // opacity: ;
+                  &:hover {
+                    box-shadow: $box_shadow_2;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

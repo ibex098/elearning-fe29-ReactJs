@@ -2,12 +2,16 @@
 import {
   FETCH_CATEGORIES,
   FETCH_COURSE_CATEGORIES,
+  FETCH_ALL_COURSES,
+  FETCH_COURSE_DETAIL
 } from "../Action/Type";
 
 const initialState = {
   categoriesList: [],
   courseCategories: [],
-  choosenCategories: "FrontEnd"
+  courseList: [],
+  choosenCategories: "BackEnd",
+  courseDetail: {}
 };
 
 const CourseReducer = (state = initialState, { type, payload }) => {
@@ -18,6 +22,14 @@ const CourseReducer = (state = initialState, { type, payload }) => {
 
     case FETCH_COURSE_CATEGORIES:
       state.courseCategories = payload;
+      return { ...state };
+
+    case FETCH_ALL_COURSES:
+      state.courseList = payload;
+      return { ...state };
+
+    case FETCH_COURSE_DETAIL:
+      state.courseDetail = payload;
       return { ...state };
 
     default:

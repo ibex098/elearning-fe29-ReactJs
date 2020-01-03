@@ -19,10 +19,10 @@ class App extends Component {
         <Header />
         <Navbar />
         <Switch>
-          <Route path="/detail" component={DetailIndex} />
+          <Route path="/home" component={Home} />
+          <Route path="/detail/:courseid" component={DetailIndex} />
           <Route path="/signup" component={SignUp} />
           <Route path="/signin" component={Login} />
-          <Route path="/home" component={Home} />
           <Route path="/" component={Home} />
         </Switch>
         <Footer />

@@ -50,8 +50,8 @@ class Categories extends Component {
 
 const mapStateToProps = state => {
   return {
-    courseCategories: state.CourseCategories.categoriesList,
-    choosenCategories: state.CourseCategories.choosenCategories
+    courseCategories: state.CourseList.categoriesList,
+    choosenCategories: state.CourseList.choosenCategories
   };
 };
 

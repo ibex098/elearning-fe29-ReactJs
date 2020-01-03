@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { logout } from "../../Redux/Action/UserAction";
 
 class NavbarUser extends Component {
-  _logout = e => {
+  _logout = () => {
     // e.preventDefault();
     console.log(this.props, this.state);
     this.props.dispatch(logout());
@@ -16,10 +16,10 @@ class NavbarUser extends Component {
           className="nav-link p-3 dropdown-toggle"
           data-toggle="dropdown"
         >
-          <span>Nhan Nguyen</span>
+          <span>{this.props.credentials.hoTen}</span>
           <img
             className="iconbox iconbox-sm mx-1"
-            src="./img/11.jpg"
+            src="../../img/600px-User_with_smile.png"
             alt="..."
           />
         </a>
@@ -57,5 +57,10 @@ class NavbarUser extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    credentials: state.User.credentials
+  };
+};
 
-export default connect(null, null)(NavbarUser);
+export default connect(mapStateToProps, null)(NavbarUser);

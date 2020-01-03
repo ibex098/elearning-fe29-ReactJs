@@ -26,7 +26,7 @@ class Navbar extends Component {
             </button>
             <div className="navbar-brand col-xl-3 col-lg-3 col-md-3 col-sm-2">
               <Link to="/home">
-                <img src="./img/logo-black.png" alt="..." />
+                <img src="../../img/logo-black.png" alt="..." />
               </Link>
             </div>
             <div className="col-xl-6 col-lg-5 col-md-6 col-sm-6">
@@ -41,19 +41,8 @@ class Navbar extends Component {
                       exact
                       to="/"
                       className="nav-link"
-                      href="./index.html"
                     >
                       Home
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink
-                      activeClassName="text_green"
-                      to="/detail"
-                      className="nav-link"
-                      href=""
-                    >
-                      Course Detail
                     </NavLink>
                   </li>
                   {/* MenuItem */}

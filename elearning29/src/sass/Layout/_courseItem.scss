@@ -1,6 +1,9 @@
 @import "../main";
 .course__items {
   .course__item {
+    a {
+      text-decoration: none;
+    }
     position: relative;
     cursor: pointer;
     &:hover {
@@ -41,7 +44,16 @@
     }
     .card {
       border: none;
+      height: 100% !important;
+      &:hover {
+        .course__img {
+          .imgOverlay {
+            opacity: 0.8;
+          }
+        }
+      }
       .course__img {
+        position: relative;
         width: 100%;
         height: 170px;
         img {

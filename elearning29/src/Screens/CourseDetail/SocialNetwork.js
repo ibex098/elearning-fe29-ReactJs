@@ -12,25 +12,26 @@ class SocialNetwork extends Component {
             >
               <ul className="list-inline d-inline-block py-2 px-4 bg_white rounded-pill">
                 <li className="list-inline-item">
-                  Share{"{"}" "{"}"}
-                  <span className="d-none d-md-inline-block">this course:</span>
+                  <span className="d-none d-md-inline-block h6">
+                    Share this course:
+                  </span>
                 </li>
-                <li className="list-inline-item mx-0">
+                <li className="list-inline-item mx-1">
                   <a href="/" className=" btn_outline_green iconbox ">
                     <i className="fab fa-facebook-f" />
                   </a>
                 </li>
-                <li className="list-inline-item mx-0">
+                <li className="list-inline-item mx-1">
                   <a href="/" className=" btn_outline_green iconbox">
                     <i className="fab fa-twitter" />
                   </a>
                 </li>
-                <li className="list-inline-item mx-0">
+                <li className="list-inline-item mx-1">
                   <a href="/" className=" btn_outline_green iconbox ">
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </li>
-                <li className="list-inline-item mx-0">
+                <li className="list-inline-item mx-1">
                   <a href="/" className=" btn_outline_green iconbox ">
                     <i className="fab fa-google-plus-g" />
                   </a>

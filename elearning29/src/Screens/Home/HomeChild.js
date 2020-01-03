@@ -11,8 +11,27 @@ class HomeChild extends Component {
   render() {
     return (
       <div>
-
         {/* Course */}
+
+        {/* Logo */}
+        <section className="logo">
+          <div className="container">
+            <div className="row text-center align-items-center">
+              <div className="col-lg-3 col-sm-4">
+                <img src="./img/2.png" alt="..." />
+              </div>
+              <div className="col-lg-3 col-sm-4">
+                <img src="./img/1.png" alt="..." />
+              </div>
+              <div className="col-lg-3 col-sm-4">
+                <img src="./img/4.png" alt="..." />
+              </div>
+              <div className="col-lg-3 col-sm-4">
+                <img src="./img/5.png" alt="..." />
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Learning */}
         <section className="learning py-5 my-5">
@@ -158,28 +177,8 @@ class HomeChild extends Component {
           </div>
         </section>
 
-        {/* Logo */}
-        <section className="logo">
-          <div className="container">
-            <div className="row text-center align-items-center">
-              <div className="col-lg-3 col-sm-4">
-                <img src="./img/2.png" alt="..." />
-              </div>
-              <div className="col-lg-3 col-sm-4">
-                <img src="./img/1.png" alt="..." />
-              </div>
-              <div className="col-lg-3 col-sm-4">
-                <img src="./img/4.png" alt="..." />
-              </div>
-              <div className="col-lg-3 col-sm-4">
-                <img src="./img/5.png" alt="..." />
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* admintrator */}
-        <section className="admintrator py-5">
+        {/* <section className="admintrator py-5">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6 admintrator__left">
@@ -200,7 +199,7 @@ class HomeChild extends Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CamPus New */}
         <section className="campusNew py-5">

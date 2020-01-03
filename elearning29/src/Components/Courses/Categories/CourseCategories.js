@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CourseItem from "../CourseItem/CourseItem";
+import CourseItemCategory from "../CourseItem/CourseItemCategory";
 import { connect } from "react-redux";
 import { setCourseCategories } from "../../../Redux/Action/CourseAction";
 
@@ -15,7 +15,7 @@ class CourseCategories extends Component {
           <div className="row course__items">
             {/* Course Item */}
             {this.props.courseCategories.map((item, index) => {
-              return <CourseItem item={item} key={index} />;
+              return <CourseItemCategory item={item} key={index} />;
             })}
           </div>
         </div>
@@ -33,8 +33,8 @@ class CourseCategories extends Component {
 
 const mapStateToProps = state => {
   return {
-    courseCategories: state.CourseCategories.courseCategories,
-    choosenCategories: state.CourseCategories.choosenCategories
+    courseCategories: state.CourseList.courseCategories,
+    choosenCategories: state.CourseList.choosenCategories
   };
 };
 

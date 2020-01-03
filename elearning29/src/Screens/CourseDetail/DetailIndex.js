@@ -10,7 +10,7 @@ class DetailIndex extends Component {
     return (
       <>
         {/* CourseDetail Cover */}
-        <CourseDetailCover />
+        <CourseDetailCover params={this.props.match.params} />
         {/* SocialNetwork */}
         <SocialNetwork />
 
@@ -19,7 +19,7 @@ class DetailIndex extends Component {
           <div className="container">
             <div className="row">
               {/* CourseDetail */}
-              <CourseDetail />
+              <CourseDetail params={this.props.match.params} />
 
               {/* Course Detail Right */}
               <CourseDetailRight />

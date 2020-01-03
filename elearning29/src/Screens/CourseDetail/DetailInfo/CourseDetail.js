@@ -1,20 +1,24 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { fetchCourseDetail } from "../../../Redux/Action/CourseAction";
 
 class CourseDetail extends Component {
   render() {
+    let courseDetail = this.props.courseDetail;
     return (
       <div className="col-lg-9 mt-5 courseDetails__left">
-        <h3>Node.js, Express &amp; MongoDB Dev to Deployment</h3>
-
-        {/* Course Detail Header */}
+        <h3>{courseDetail.tenKhoaHoc}</h3>
         <div className="row mt-3 courseDetails__header">
           <div className="col-lg-3 col-md-6 my-2">
             <div className="media border-right h-100">
-              <img className="iconbox mr-3" src="./img/30 (9).jpg" alt="..." />
+              <img className="iconbox mr-3" src="../img/30 (9).jpg" alt="..." />
               <div className="media-body">
-                <span className="text-gray d-block text_gray">Instructor:</span>
+                <span className="text-gray d-block text_gray">
+                  date created:
+                </span>
                 <a href="/" className="h6">
-                  John Richi
+                  {courseDetail.ngayTao}
+                  {/* {courseDetail.nguoiTao.hoTen} */}
                 </a>
               </div>
             </div>
@@ -24,6 +28,7 @@ class CourseDetail extends Component {
               <span className="text_gray d-block">Categories:</span>
               <a href="/" className="h6">
                 Development
+                {/* {courseDetail.danhMucKhoaHoc.tenDanhMucKhoaHoc} */}
               </a>
             </div>
           </div>
@@ -50,8 +55,6 @@ class CourseDetail extends Component {
             </div>
           </div>
         </div>
-
-        {/* Course Detail Body */}
         <div className="card p-4 shadow_2 border-0 my-4 courseDetails__body">
           <h4>Features Includes:</h4>
           <ul className="list-inline mb-0 mt-2">
@@ -59,27 +62,22 @@ class CourseDetail extends Component {
               <i className="fa fa-headphones-alt text_green" />
               <span className="ml-2">246 lectures</span>
             </li>
-
             <li className="list-inline-item my-2 pr-md-4">
               <span className="lnr lnr-clock text_green" />
               <span className="ml-2">27.5 Hours</span>
             </li>
-
             <li className="list-inline-item my-2 pr-md-4">
               <span className="lnr lnr-user text_green" />
               <span className="ml-2">98,250 students entrolled</span>
             </li>
-
             <li className="list-inline-item my-2 pr-md-4">
               <i className="fa fa-sync text_green" />
               <span className="ml-2">Lifetime access</span>
             </li>
-
             <li className="list-inline-item my-2 pr-md-4">
               <i className="fa fa-crown text_green" />
               <span className="ml-2">Certificate of Completion</span>
             </li>
-
             <li className="list-inline-item my-2 pr-md-4">
               <i className="fa fa-crown text_green" />
               <span className="ml-2">
@@ -88,15 +86,13 @@ class CourseDetail extends Component {
             </li>
           </ul>
         </div>
-
-        {/* Course Detail Footer */}
         <div className="col-12 mt-4 courseDetails__footer">
           <ul className="nav tab-line border-bottom mb-5" role="tablist">
             <li className="nav-item">
               <a
                 className="nav-link active show"
                 data-toggle="tab"
-                href="/tabDescription"
+                href="#tabDescription"
                 role="tab"
                 aria-selected="true"
               >
@@ -107,7 +103,7 @@ class CourseDetail extends Component {
               <a
                 className="nav-link"
                 data-toggle="tab"
-                href="/tabCurriculum"
+                href="#tabCurriculum"
                 role="tab"
                 aria-selected="false"
               >
@@ -118,7 +114,7 @@ class CourseDetail extends Component {
               <a
                 className="nav-link"
                 data-toggle="tab"
-                href="/tabInstructors"
+                href="#tabInstructors"
                 role="tab"
                 aria-selected="false"
               >
@@ -129,7 +125,7 @@ class CourseDetail extends Component {
               <a
                 className="nav-link"
                 data-toggle="tab"
-                href="/tabReviews"
+                href="#tabReviews"
                 role="tab"
                 aria-selected="false"
               >
@@ -267,7 +263,7 @@ class CourseDetail extends Component {
                   <div className="list-group-item bg-light curriculumButton">
                     <a
                       className="row"
-                      href="/accordionCurriculum_1"
+                      href="#accordionCurriculum_1"
                       data-toggle="collapse"
                       aria-expanded="true"
                     >
@@ -289,7 +285,7 @@ class CourseDetail extends Component {
                   <div
                     id="accordionCurriculum_1"
                     className="collapse show text_gray curriculumItem"
-                    data-parent="/accordionCurriculum"
+                    data-parent="#accordionCurriculum"
                   >
                     <div className="list-group-item">
                       <span className="row">
@@ -333,7 +329,7 @@ class CourseDetail extends Component {
                     </div>
                     <div className="list-group-item">
                       <span className="row">
-                        <span className="col-9 col-md-8" href="/">
+                        <span className="col-9 col-md-8" href="#">
                           <i className="fa fa-play small text_green mr-1 " />
                           Creating A Full Webpage
                         </span>
@@ -382,7 +378,7 @@ class CourseDetail extends Component {
                   <div className="list-group-item bg-light curriculumButton">
                     <a
                       className="row collapsed"
-                      href="/accordionCurriculum_2"
+                      href="#accordionCurriculum_2"
                       data-toggle="collapse"
                       aria-expanded="true"
                     >
@@ -404,7 +400,7 @@ class CourseDetail extends Component {
                   <div
                     id="accordionCurriculum_2"
                     className="collapse text_gray curriculumItem"
-                    data-parent="/accordionCurriculum"
+                    data-parent="#accordionCurriculum"
                   >
                     <div className="list-group-item">
                       <span className="row">
@@ -497,7 +493,7 @@ class CourseDetail extends Component {
                   <div className="list-group-item bg-light curriculumButton">
                     <a
                       className="row collapsed"
-                      href="/accordionCurriculum_3"
+                      href="#accordionCurriculum_3"
                       data-toggle="collapse"
                       aria-expanded="true"
                     >
@@ -519,7 +515,7 @@ class CourseDetail extends Component {
                   <div
                     id="accordionCurriculum_3"
                     className="collapse text_gray curriculumItem"
-                    data-parent="/accordionCurriculum"
+                    data-parent="#accordionCurriculum"
                   >
                     <div className="list-group-item">
                       <span className="row">
@@ -612,7 +608,7 @@ class CourseDetail extends Component {
                   <div className="list-group-item bg-light curriculumButton">
                     <a
                       className="row collapsed"
-                      href="/accordionCurriculum_4"
+                      href="#accordionCurriculum_4"
                       data-toggle="collapse"
                       aria-expanded="true"
                     >
@@ -634,7 +630,7 @@ class CourseDetail extends Component {
                   <div
                     id="accordionCurriculum_4"
                     className="collapse text_gray curriculumItem"
-                    data-parent="/accordionCurriculum"
+                    data-parent="#accordionCurriculum"
                   >
                     <div className="list-group-item">
                       <span className="row">
@@ -734,7 +730,7 @@ class CourseDetail extends Component {
                   <a href="/">
                     <img
                       className="iconbox iconbox_xl"
-                      src="./img/30 (1).jpg"
+                      src="../img/30 (1).jpg"
                       alt="..."
                     />
                   </a>
@@ -778,7 +774,7 @@ class CourseDetail extends Component {
                   <a href="/">
                     <img
                       className="iconbox iconbox_xl"
-                      src="./img/30 (10).jpg"
+                      src="../img/30 (10).jpg"
                       alt="..."
                     />
                   </a>
@@ -946,7 +942,7 @@ class CourseDetail extends Component {
                 <div className="col-md-4 my-2 media">
                   <img
                     className="iconbox iconbox_xl"
-                    src="./img/30 (1).jpg"
+                    src="../img/30 (1).jpg"
                     alt="..."
                   />
                   <div className="media-body ml-4">
@@ -975,7 +971,7 @@ class CourseDetail extends Component {
                 <div className="col-md-4 my-2 media">
                   <img
                     className="iconbox iconbox_xl"
-                    src="./img/30 (9).jpg"
+                    src="../img/30 (9).jpg"
                     alt="..."
                   />
                   <div className="media-body ml-4">
@@ -1029,7 +1025,11 @@ class CourseDetail extends Component {
               {/* END row*/}
               <div className="row border-bottom mx-0 py-4 mt-4">
                 <div className="col-md-4 my-2 media">
-                  <img className="iconbox iconbox_xl" src="./img/51.jpg" alt="..." />
+                  <img
+                    className="iconbox iconbox_xl"
+                    src="../img/51.jpg"
+                    alt="..."
+                  />
                   <div className="media-body ml-4">
                     <small className="text-gray">1 year ago</small>
                     <h6>John Doe</h6>
@@ -1069,6 +1069,20 @@ class CourseDetail extends Component {
       </div>
     );
   }
+  componentDidMount() {
+    console.log(this.props);
+    const { courseid } = this.props.params;
+    this.props.dispatch(fetchCourseDetail(courseid));
+  }
+  // componentDidUpdate() {
+  //   this.props.dispatch(fetchCourseDetail(this.props.params));
+  // }
 }
 
-export default CourseDetail;
+const mapStateToProps = state => {
+  return {
+    courseDetail: state.CourseList.courseDetail
+  };
+};
+
+export default connect(mapStateToProps, null)(CourseDetail);
