@@ -11,6 +11,7 @@ import { connect } from "react-redux";
 import { resConnector } from "./Services/Index";
 import { reduxAction } from "./Redux/Action/CourseAction";
 import { LOGIN } from "./Redux/Action/Type";
+import UserIndex from "./Screens/UserProfile/UserIndex";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
           <Route path="/detail/:courseid" component={DetailIndex} />
           <Route path="/signup" component={SignUp} />
           <Route path="/signin" component={Login} />
+          <Route path="/userprofile" component={UserIndex} />
           <Route path="/" component={Home} />
         </Switch>
         <Footer />

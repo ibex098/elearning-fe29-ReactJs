@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { logout } from "../../Redux/Action/UserAction";
+import { NavLink } from "react-router-dom";
 
 class NavbarUser extends Component {
   _logout = () => {
@@ -11,8 +12,8 @@ class NavbarUser extends Component {
   render() {
     return (
       <li className="nav-item ">
-        <a
-          href="."
+        <NavLink
+          to="/userprofile"
           className="nav-link p-3 dropdown-toggle"
           data-toggle="dropdown"
         >
@@ -22,13 +23,13 @@ class NavbarUser extends Component {
             src="../../img/600px-User_with_smile.png"
             alt="..."
           />
-        </a>
+        </NavLink>
         <ul className="dropdown-menu">
           <li>
-            <a className="dropdown-item" href=".">
+            <NavLink to="/userprofile" className="dropdown-item">
               <i className="fa fa-user mr-2" />
               <span className="mr-2">My profile</span>
-            </a>
+            </NavLink>
           </li>
           <li>
             <a className="dropdown-item" href=".">
