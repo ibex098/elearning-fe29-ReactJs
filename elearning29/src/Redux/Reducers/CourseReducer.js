@@ -3,7 +3,8 @@ import {
   FETCH_CATEGORIES,
   FETCH_COURSE_CATEGORIES,
   FETCH_ALL_COURSES,
-  FETCH_COURSE_DETAIL
+  FETCH_COURSE_DETAIL,
+  FETCH_COURSE_PAGE
 } from "../Action/Type";
 
 const initialState = {
@@ -11,7 +12,8 @@ const initialState = {
   courseCategories: [],
   courseList: [],
   choosenCategories: "BackEnd",
-  courseDetail: {}
+  courseDetail: {},
+  coursePage: []
 };
 
 const CourseReducer = (state = initialState, { type, payload }) => {
@@ -30,6 +32,12 @@ const CourseReducer = (state = initialState, { type, payload }) => {
 
     case FETCH_COURSE_DETAIL:
       state.courseDetail = payload;
+      return { ...state };
+
+    case FETCH_COURSE_PAGE:
+      console.log(payload);
+      state.coursePage = payload.items;
+      console.log(+Math.ceil(payload.totalCount / payload.count));// làm tròn lên
       return { ...state };
 
     default:

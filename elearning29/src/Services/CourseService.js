@@ -38,6 +38,14 @@ class CourseServices {
       method: "GET"
     });
   }
+  //lấy danh sách khóa học có phân trang
+  fetchCoursePage() {
+    return resConnector({
+      url:
+        "http://elearning0706.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc_PhanTrang?page=1&pageSize=3&MaNhom=GP01",
+      method: "GET"
+    });
+  }
 }
 
 export default CourseServices;

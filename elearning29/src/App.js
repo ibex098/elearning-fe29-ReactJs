@@ -12,6 +12,7 @@ import { resConnector } from "./Services/Index";
 import { reduxAction } from "./Redux/Action/CourseAction";
 import { LOGIN } from "./Redux/Action/Type";
 import UserIndex from "./Screens/UserProfile/UserIndex";
+import Index from "./Screens/AllCourses/Index";
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
           <Route path="/signup" component={SignUp} />
           <Route path="/signin" component={Login} />
           <Route path="/userprofile" component={UserIndex} />
+          <Route path="/allcourses" component={Index} />
           <Route path="/" component={Home} />
         </Switch>
         <Footer />

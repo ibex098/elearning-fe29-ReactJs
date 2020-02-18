@@ -26,7 +26,7 @@ class CourseCategories extends Component {
   // category sét cứng là FrontEnd
   componentDidMount() {
     const categoriesId = this.props.choosenCategories;
-    // console.log(this.props.choosenCategories);
+    // console.log(this.props.courseCategories);
     this.props.dispatch(setCourseCategories(categoriesId));
   }
 }

@@ -5,6 +5,7 @@ export const FETCH_CATEGORIES = "FETCH_CATEGORIES"; //lấy khóa danh mục kh�
 export const FETCH_COURSE_CATEGORIES = "FETCH_COURSE_CATEGORIES"; //lấy khóa học theo danh mục
 export const FETCH_ALL_COURSES = "FETCH_ALL_COURSES"; //lấy tất cả khóa học
 export const FETCH_COURSE_DETAIL = "FETCH_COURSE_DETAIL"; //lấy chi tiết khóa học
+export const FETCH_COURSE_PAGE = "FETCH_COURSE_PAGE"; //lấy danh sách khóa học phân trang
 
 
 

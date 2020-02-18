@@ -3,7 +3,8 @@ import {
   FETCH_COURSE_CATEGORIES,
   FETCH_CATEGORIES,
   FETCH_ALL_COURSES,
-  FETCH_COURSE_DETAIL
+  FETCH_COURSE_DETAIL,
+  FETCH_COURSE_PAGE
 } from "./Type";
 
 const courseService = new CourseService();
@@ -68,6 +69,21 @@ export const fetchCourseDetail = courseId => {
       .then(res => {
         console.log(res.data);
         dispatch(reduxAction(FETCH_COURSE_DETAIL, res.data));
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+};
+
+// lấy danh sách khóa học phân trang
+export const fetchCoursePage = () => {
+  return dispatch => {
+    courseService
+      .fetchCoursePage()
+      .then(res => {
+        // console.log(res.data.items);
+        dispatch(reduxAction(FETCH_COURSE_PAGE,res.data));
       })
       .catch(err => {
         console.log(err);

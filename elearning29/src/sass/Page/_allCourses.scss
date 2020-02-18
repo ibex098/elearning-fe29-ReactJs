@@ -24,6 +24,17 @@
 //All Courses Item
 .allCourseItem {
   padding: 5rem 0;
+  .course__card{
+    .course__img {
+      position: relative;
+      width: 100%;
+      height: 170px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
   .page-item {
     a {
       &:hover {

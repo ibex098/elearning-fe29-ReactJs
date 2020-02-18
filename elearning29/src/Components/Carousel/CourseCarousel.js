@@ -8,6 +8,7 @@ import "../../sass/Layout/_courses.scss";
 import "../../sass/Layout/_courseItem.scss";
 import CourseItem from "../Courses/CourseItem/CourseItem";
 import { fetchAllCourses } from "../../Redux/Action/CourseAction";
+import {NavLink} from "react-router-dom"
 
 class CourseCarousel extends Component {
   render() {
@@ -24,8 +25,8 @@ class CourseCarousel extends Component {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 2,
-            infinite: true,
-            dots: true
+            infinite: false,
+            dots: false
           }
         },
         {
@@ -55,6 +56,15 @@ class CourseCarousel extends Component {
               return <CourseItem key={index} item={item} />;
             })}
           </Slider>
+          <div className="text-center">
+            <NavLink
+              to="/allcourses"
+              className="btn_green"
+              style={{ textDecoration: "none" }}
+            >
+              View All
+            </NavLink>
+          </div>
         </div>
       </section>
     );
